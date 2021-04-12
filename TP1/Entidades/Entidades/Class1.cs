@@ -6,7 +6,9 @@ namespace Entidades
     {
         public static double Operador(Numero n1,Numero n2,string operador)
         {
-            operador=ValidarOperador(operador.Trim()[0]);
+            
+            if (!String.IsNullOrWhiteSpace(operador))
+                operador=ValidarOperador(operador.Trim()[0]);
             switch(operador)
             {
                 case "/":

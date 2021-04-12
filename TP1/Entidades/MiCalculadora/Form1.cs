@@ -27,5 +27,18 @@ namespace MiCalculadora
             Entidades.Numero numeroDos = new Entidades.Numero(this.txtNumero2.Text);
             this.labelResultado.Text = (FormCalculadora.Operar(numeroUno, numeroDos, this.comboBox2.Text)).ToString();
         }
+
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            this.labelResultado.Text = "";
+            this.txtNumero1.Text = "";
+            this.txtNumero2.Text = "";
+            this.comboBox2.Text = "";
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

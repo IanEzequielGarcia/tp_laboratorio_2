@@ -68,7 +68,6 @@ namespace MiCalculadora
             // comboBox2
             // 
             this.comboBox2.BackColor = System.Drawing.Color.Maroon;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "/",
@@ -98,6 +97,7 @@ namespace MiCalculadora
             this.BtnLimpiar.TabIndex = 7;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
             // 
             // BtnCerrar
             // 
@@ -107,6 +107,7 @@ namespace MiCalculadora
             this.BtnCerrar.TabIndex = 8;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // BtnDecABin
             // 
