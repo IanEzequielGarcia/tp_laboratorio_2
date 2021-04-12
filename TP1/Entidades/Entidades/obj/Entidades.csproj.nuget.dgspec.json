@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ianch\\OneDrive\\Escritorio\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj": {}
+    "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ianch\\OneDrive\\Escritorio\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj": {
+    "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ianch\\OneDrive\\Escritorio\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Ianch\\OneDrive\\Escritorio\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Ianch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ianch\\OneDrive\\Escritorio\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\obj\\",
+        "outputPath": "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ianch\\AppData\\Roaming\\NuGet\\NuGet.Config",

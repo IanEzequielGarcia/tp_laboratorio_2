@@ -1,0 +1,17 @@
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.csprojAssemblyReference.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.csprojAssemblyReference.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\bin\Debug\net5.0\Entidades.deps.json
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\bin\Debug\net5.0\Entidades.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\Entidades\obj\Debug\net5.0\Entidades.pdb

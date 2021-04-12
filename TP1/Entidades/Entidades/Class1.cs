@@ -2,6 +2,31 @@
 
 namespace Entidades
 {
+    public static class Calculadora
+    {
+        public static double Operador(Numero n1,Numero n2,string operador)
+        {
+            operador=ValidarOperador(operador.Trim()[0]);
+            switch(operador)
+            {
+                case "/":
+                    return n1 / n2;
+                case "*":
+                    return n1 * n2;
+                case "-":
+                    return n1 - n2;
+                default:
+                    return n1 + n2;
+            }
+        }
+        static private string ValidarOperador(char operador)
+        {
+            if (operador == '/' || operador == '*' || operador == '-')
+                return $"{operador}";
+            else
+                return "+";
+        }
+    }
     public class Numero
     {
         private double number;
@@ -40,10 +65,30 @@ namespace Entidades
         }
         string DecimalBinario(double elNumero)
         {
-            int elInt = elNumero;
-            string binary = Convert.ToString(elInt, 2);
-
-            return binary;
+            return "";
+        }
+        string BinarioDecimal(string elNumero)
+        {
+            return "";
+        }
+        public static double operator -(Numero n1, Numero n2)
+        {
+            return n1.number - n2.number;
+        }
+        public static double operator +(Numero n1, Numero n2)
+        {
+            return n1.number + n2.number;
+        }
+        public static double operator *(Numero n1, Numero n2)
+        {
+            return n1.number * n2.number;
+        }
+        public static double operator /(Numero n1, Numero n2)
+        {
+            if (n1.number != 0 && n2.number != 0)
+                return n1.number / n2.number;
+            else
+                return double.MinValue;
         }
     }
 }
