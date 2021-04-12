@@ -60,7 +60,7 @@ namespace Entidades
         {
             for(int i=0;i<elnumero.Length;i++)
             {
-                if (elnumero[i] != '1'&& elnumero[i] != '0')
+                if (String.IsNullOrWhiteSpace(elnumero) || elnumero[i] != '1'&& elnumero[i] != '0'||elnumero[0]=='-')
                     return false;  
             }
             return true;

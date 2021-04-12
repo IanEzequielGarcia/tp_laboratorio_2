@@ -54,13 +54,13 @@ namespace MiCalculadora
             this.txtNumero2.Location = new System.Drawing.Point(395, 102);
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(101, 23);
-            this.txtNumero2.TabIndex = 1;
+            this.txtNumero2.TabIndex = 2;
             // 
             // labelResultado
             // 
             this.labelResultado.AutoSize = true;
             this.labelResultado.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelResultado.Location = new System.Drawing.Point(517, 105);
+            this.labelResultado.Location = new System.Drawing.Point(498, 75);
             this.labelResultado.Name = "labelResultado";
             this.labelResultado.Size = new System.Drawing.Size(0, 15);
             this.labelResultado.TabIndex = 2;
@@ -77,14 +77,14 @@ namespace MiCalculadora
             this.comboBox2.Location = new System.Drawing.Point(220, 102);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 4;
+            this.comboBox2.TabIndex = 1;
             // 
             // BtnOperar
             // 
             this.BtnOperar.Location = new System.Drawing.Point(44, 163);
             this.BtnOperar.Name = "BtnOperar";
             this.BtnOperar.Size = new System.Drawing.Size(114, 31);
-            this.BtnOperar.TabIndex = 6;
+            this.BtnOperar.TabIndex = 3;
             this.BtnOperar.Text = "Operar";
             this.BtnOperar.UseVisualStyleBackColor = true;
             this.BtnOperar.Click += new System.EventHandler(this.BtnOperar_Click);
@@ -94,7 +94,7 @@ namespace MiCalculadora
             this.BtnLimpiar.Location = new System.Drawing.Point(221, 163);
             this.BtnLimpiar.Name = "BtnLimpiar";
             this.BtnLimpiar.Size = new System.Drawing.Size(114, 31);
-            this.BtnLimpiar.TabIndex = 7;
+            this.BtnLimpiar.TabIndex = 4;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
             this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
@@ -104,7 +104,7 @@ namespace MiCalculadora
             this.BtnCerrar.Location = new System.Drawing.Point(383, 163);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(114, 31);
-            this.BtnCerrar.TabIndex = 8;
+            this.BtnCerrar.TabIndex = 5;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
@@ -114,7 +114,7 @@ namespace MiCalculadora
             this.BtnDecABin.Location = new System.Drawing.Point(45, 222);
             this.BtnDecABin.Name = "BtnDecABin";
             this.BtnDecABin.Size = new System.Drawing.Size(227, 31);
-            this.BtnDecABin.TabIndex = 9;
+            this.BtnDecABin.TabIndex = 6;
             this.BtnDecABin.Text = "Convertir a BIN";
             this.BtnDecABin.UseVisualStyleBackColor = true;
             this.BtnDecABin.Click += new System.EventHandler(this.BtnDecABin_Click);
@@ -124,7 +124,7 @@ namespace MiCalculadora
             this.BtnBinADec.Location = new System.Drawing.Point(271, 222);
             this.BtnBinADec.Name = "BtnBinADec";
             this.BtnBinADec.Size = new System.Drawing.Size(227, 31);
-            this.BtnBinADec.TabIndex = 10;
+            this.BtnBinADec.TabIndex = 7;
             this.BtnBinADec.Text = "Convertir a DEC";
             this.BtnBinADec.UseVisualStyleBackColor = true;
             this.BtnBinADec.Click += new System.EventHandler(this.BtnBinADec_Click);

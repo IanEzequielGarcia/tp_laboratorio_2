@@ -30,12 +30,15 @@ namespace MiCalculadora
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
+            this.Limpiar();
+        }
+        private void Limpiar()
+        {
             this.labelResultado.Text = "";
             this.txtNumero1.Text = "";
             this.txtNumero2.Text = "";
             this.comboBox2.Text = "";
         }
-
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -45,6 +48,9 @@ namespace MiCalculadora
         {
             string num = this.labelResultado.Text;
             Entidades.Numero aux = new Entidades.Numero(num);
+            if (String.IsNullOrWhiteSpace(num))
+                this.labelResultado.Text = "Valor inválido";
+            else
             this.labelResultado.Text=aux.DecimalBinario(Double.Parse(num));
         }
 
@@ -52,7 +58,10 @@ namespace MiCalculadora
         {
             string num = this.labelResultado.Text;
             Entidades.Numero aux = new Entidades.Numero(num);
-            this.labelResultado.Text = aux.BinarioDecimal(num);
+            if (String.IsNullOrWhiteSpace(num))
+                this.labelResultado.Text = "Valor inválido";
+            else
+                this.labelResultado.Text = aux.BinarioDecimal(num);
         }
     }
 }
