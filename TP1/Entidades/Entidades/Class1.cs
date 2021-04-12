@@ -65,13 +65,18 @@ namespace Entidades
             }
             return true;
         }
-        string DecimalBinario(double elNumero)
+        public string DecimalBinario(double elNumero)
         {
-            return "";
+            Int64 aux2 = Convert.ToInt64(elNumero);
+            if (aux2 >= 0)
+                return Convert.ToString(aux2, 2);
+            return "Valor inválido";
         }
-        string BinarioDecimal(string elNumero)
+        public string BinarioDecimal(string elNumero)
         {
-            return "";
+            if (EsBinario(elNumero.ToString()))
+                return Convert.ToString(Convert.ToInt64(elNumero, 2));
+            return "Valor inválido";
         }
         public static double operator -(Numero n1, Numero n2)
         {

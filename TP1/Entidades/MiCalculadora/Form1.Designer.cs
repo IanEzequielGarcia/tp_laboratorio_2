@@ -117,6 +117,7 @@ namespace MiCalculadora
             this.BtnDecABin.TabIndex = 9;
             this.BtnDecABin.Text = "Convertir a BIN";
             this.BtnDecABin.UseVisualStyleBackColor = true;
+            this.BtnDecABin.Click += new System.EventHandler(this.BtnDecABin_Click);
             // 
             // BtnBinADec
             // 
@@ -126,6 +127,7 @@ namespace MiCalculadora
             this.BtnBinADec.TabIndex = 10;
             this.BtnBinADec.Text = "Convertir a DEC";
             this.BtnBinADec.UseVisualStyleBackColor = true;
+            this.BtnBinADec.Click += new System.EventHandler(this.BtnBinADec_Click);
             // 
             // FormCalculadora
             // 

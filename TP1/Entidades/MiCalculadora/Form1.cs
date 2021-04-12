@@ -40,5 +40,19 @@ namespace MiCalculadora
         {
             this.Dispose();
         }
+
+        private void BtnDecABin_Click(object sender, EventArgs e)
+        {
+            string num = this.labelResultado.Text;
+            Entidades.Numero aux = new Entidades.Numero(num);
+            this.labelResultado.Text=aux.DecimalBinario(Double.Parse(num));
+        }
+
+        private void BtnBinADec_Click(object sender, EventArgs e)
+        {
+            string num = this.labelResultado.Text;
+            Entidades.Numero aux = new Entidades.Numero(num);
+            this.labelResultado.Text = aux.BinarioDecimal(num);
+        }
     }
 }
