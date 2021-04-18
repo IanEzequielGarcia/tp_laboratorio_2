@@ -69,7 +69,7 @@ namespace MiCalculadora
         {
             string num = this.labelResultado.Text;
             Entidades.Numero aux = new Entidades.Numero(num);
-            if (String.IsNullOrWhiteSpace(num))
+            if (num== "Valor inválido" || String.IsNullOrWhiteSpace(num))
                 this.labelResultado.Text = "Valor inválido";
             else
             this.labelResultado.Text=aux.DecimalBinario(Double.Parse(num));
