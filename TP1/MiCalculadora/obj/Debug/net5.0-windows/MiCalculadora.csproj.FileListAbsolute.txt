@@ -1,0 +1,102 @@
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.exe
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.deps.json
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.json
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.dev.json
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csprojAssemblyReference.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfoInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfo.cs
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csprojAssemblyReference.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfoInputs.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfo.cs
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.exe
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.deps.json
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.json
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.dev.json
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.pdb
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CopyComplete
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\Entidades\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.exe
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.deps.json
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.json
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.dev.json
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.pdb
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csprojAssemblyReference.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfoInputs.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfo.cs
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CopyComplete
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
+C:\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.exe
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.deps.json
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.json
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.dev.json
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.pdb
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csprojAssemblyReference.cache
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfoInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfo.cs
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CopyComplete
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
+C:\Users\Ianch\OneDrive\Escritorio\AAA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.exe
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.deps.json
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.json
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.dev.json
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csprojAssemblyReference.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfoInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfo.cs
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CopyComplete
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
