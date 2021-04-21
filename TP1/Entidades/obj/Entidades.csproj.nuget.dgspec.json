@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\Ianch\\OneDrive\\Escritorio\\AAA\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Ianch\\OneDrive\\Escritorio\\AAA\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Ianch\\OneDrive\\Escritorio\\AAA\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Ianch\\OneDrive\\Escritorio\\AAA\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Ianch\\.nuget\\packages\\",
-        "outputPath": "C:\\ESCUELA\\Programacion o escuela\\PRIMERCUATRIMESTRE2021\\PRIMERCUATRI2021\\tp_laboratorio_2\\TP1\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Ianch\\OneDrive\\Escritorio\\AAA\\tp_laboratorio_2\\TP1\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ianch\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,46 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public static class Calculadora
-    {
-        /// <summary>
-        /// Toma el string operador que contiene el calculo aritmetico deseado, y lo lleva a cabo con los objetos Numero1 y Numero2
-        /// </summary>
-        /// <param name="n1">el primer numero</param>
-        /// <param name="n2">el segundo numero</param>
-        /// <param name="operador">el operador ingresado</param>
-        /// <returns>el resultado de la operacion aritmetica</returns>
-        public static double Operador(Numero n1,Numero n2,string operador)
-        {
-            
-            if (!String.IsNullOrWhiteSpace(operador))
-                operador=ValidarOperador(operador.Trim()[0]);
-            switch(operador)
-            {
-                case "/":
-                    return n1 / n2;
-                case "*":
-                    return n1 * n2;
-                case "-":
-                    return n1 - n2;
-                default:
-                    return n1 + n2;
-            }
-        }
-        /// <summary>
-        /// Valida que el operador ingresado sea correcto (+ - * /), y de no ser así, devuelve +
-        /// </summary>
-        /// <param name="operador">el operador ingresado</param>
-        /// <returns>devuelve el operador ingresado, y de default + </returns>
-        static private string ValidarOperador(char operador)
-        {
-            if (operador == '/' || operador == '*' || operador == '-')
-                return $"{operador}";
-            else
-                return "+";
-        }
-    }
     public class Numero
     {
         private double number;
@@ -55,7 +20,7 @@ namespace Entidades
         /// constructor con numero, que llama al constructor por string
         /// </summary>
         /// <param name="ingresado"></param>
-        public Numero(double ingresado):this(string.Format("{0}", ingresado))
+        public Numero(double ingresado) : this(string.Format("{0}", ingresado))
         {
 
         }
@@ -93,10 +58,10 @@ namespace Entidades
         /// <returns>devuelve true si es un binario valido o false si no lo es</returns>
         bool EsBinario(string elnumero)
         {
-            for(int i=0;i<elnumero.Length;i++)
+            for (int i = 0; i < elnumero.Length; i++)
             {
-                if (String.IsNullOrWhiteSpace(elnumero) || elnumero[i] != '1'&& elnumero[i] != '0'||elnumero[0]=='-')
-                    return false;  
+                if (String.IsNullOrWhiteSpace(elnumero) || elnumero[i] != '1' && elnumero[i] != '0' || elnumero[0] == '-')
+                    return false;
             }
             return true;
         }
