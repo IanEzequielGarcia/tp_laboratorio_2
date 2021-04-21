@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Entidades
 {
     public static class Calculadora
     {
+        #region Calculador y Validacion
         /// <summary>
         /// Toma el string operador que contiene el calculo aritmetico deseado, y lo lleva a cabo con los objetos Numero1 y Numero2
         /// </summary>
@@ -11,12 +16,12 @@ namespace Entidades
         /// <param name="n2">el segundo numero</param>
         /// <param name="operador">el operador ingresado</param>
         /// <returns>el resultado de la operacion aritmetica</returns>
-        public static double Operador(Numero n1,Numero n2,string operador)
+        public static double Operador(Numero n1, Numero n2, string operador)
         {
-            
+
             if (!String.IsNullOrWhiteSpace(operador))
-                operador=ValidarOperador(operador.Trim()[0]);
-            switch(operador)
+                operador = ValidarOperador(operador.Trim()[0]);
+            switch (operador)
             {
                 case "/":
                     return n1 / n2;
@@ -40,6 +45,7 @@ namespace Entidades
             else
                 return "+";
         }
+        #endregion
     }
-    
+
 }

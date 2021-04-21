@@ -12,15 +12,22 @@ namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {
-        public FormCalculadora()
-        {
-            InitializeComponent();
-        }
-        #region FormClosing&Load
+
+        #region FormClosing Load e Initalize
+        /// <summary>
+        /// Llama al metodo limpiar cuando se carga la aplicacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
             this.Limpiar();
         }
+        /// <summary>
+        /// Pregunta si esta seguro de salir cuando intenta cerrar la aplicacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult respuesta = MessageBox.Show("Esta seguro?", "Salir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -29,6 +36,10 @@ namespace MiCalculadora
             else
                 e.Cancel = true;
         }
+        public FormCalculadora()
+        {
+            InitializeComponent();
+        }
         #endregion
 
         #region MetodosFormCalculadora
@@ -36,6 +47,9 @@ namespace MiCalculadora
         {
             return Entidades.Calculadora.Operador(elN1, elN2, elOperador);
         }
+        /// <summary>
+        /// "Limpia" Los campos de texto del form
+        /// </summary>
         private void Limpiar()
         {
             this.labelResultado.Text = "";
@@ -57,7 +71,6 @@ namespace MiCalculadora
             Entidades.Numero numeroDos = new Entidades.Numero(this.txtNumero2.Text);
             this.labelResultado.Text = (FormCalculadora.Operar(numeroUno, numeroDos, this.comboBox2.Text)).ToString();
         }
-
         /// <summary>
         /// Llama a la funcion Limpiar
         /// </summary>
@@ -68,18 +81,14 @@ namespace MiCalculadora
             this.Limpiar();
         }
         /// <summary>
-        /// "Limpia" Los campos de texto del form
-        /// </summary>
-
-        /// <summary>
         /// Cierra el Windows form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            DialogResult respuesta = MessageBox.Show("Esta seguro?","Salir?", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if(respuesta==DialogResult.Yes)
+            DialogResult respuesta = MessageBox.Show("Esta seguro?", "Salir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (respuesta == DialogResult.Yes)
                 this.Dispose();
         }
         /// <summary>
@@ -91,10 +100,10 @@ namespace MiCalculadora
         {
             string num = this.labelResultado.Text;
             Entidades.Numero aux = new Entidades.Numero(num);
-            if (num== "Valor inválido" || String.IsNullOrWhiteSpace(num))
+            if (num == "Valor inválido" || String.IsNullOrWhiteSpace(num))
                 this.labelResultado.Text = "Valor inválido";
             else
-            this.labelResultado.Text=aux.DecimalBinario(Double.Parse(num));
+                this.labelResultado.Text = aux.DecimalBinario(Double.Parse(num));
         }
         /// <summary>
         /// convierte el resultado de la operacion aritmetica de binario a decimal

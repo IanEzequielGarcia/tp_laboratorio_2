@@ -8,6 +8,7 @@ namespace Entidades
 {
     public class Numero
     {
+        #region atributos y constructores
         private double number;
         /// <summary>
         /// constructor por defecto
@@ -33,24 +34,15 @@ namespace Entidades
             SetNumero = ingresado;
         }
         /// <summary>
-        /// Valida que el string ingresado sea un numero valido
-        /// </summary>
-        /// <param name="ingresado">el string ingresado con el numero</param>
-        /// <returns>el numero ya parseado de string a double</returns>
-        private double ValidarNumero(string ingresado)
-        {
-            double aux;
-            if (!double.TryParse(ingresado, out aux))
-                return 0;
-            return aux;
-        }
-        /// <summary>
         /// Valida que el string ingresado sea un numero valido y lo setea
         /// </summary>
         private string SetNumero
         {
             set { this.number = ValidarNumero(value); }
         }
+        #endregion
+
+        #region Metodos Binarios
         /// <summary>
         /// comprueba que el string ingresado sea binario
         /// </summary>
@@ -88,6 +80,9 @@ namespace Entidades
                 return Convert.ToString(Convert.ToInt64(elNumero, 2));
             return "Valor inválido";
         }
+        #endregion
+
+        #region Operadores aritmeticos y Validacion
         /// <summary>
         /// resta los numeros guardados en n1 y n2
         /// </summary>
@@ -131,5 +126,18 @@ namespace Entidades
             else
                 return double.MinValue;
         }
+        /// <summary>
+        /// Valida que el string ingresado sea un numero valido
+        /// </summary>
+        /// <param name="ingresado">el string ingresado con el numero</param>
+        /// <returns>el numero ya parseado de string a double</returns>
+        private double ValidarNumero(string ingresado)
+        {
+            double aux;
+            if (!double.TryParse(ingresado, out aux))
+                return 0;
+            return aux;
+        }
+        #endregion
     }
 }
