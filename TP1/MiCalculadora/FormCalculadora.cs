@@ -16,10 +16,36 @@ namespace MiCalculadora
         {
             InitializeComponent();
         }
+        #region FormClosing&Load
+        private void FormCalculadora_Load(object sender, EventArgs e)
+        {
+            this.Limpiar();
+        }
+        private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult respuesta = MessageBox.Show("Esta seguro?", "Salir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (respuesta == DialogResult.Yes)
+                this.Dispose();
+            else
+                e.Cancel = true;
+        }
+        #endregion
+
+        #region MetodosFormCalculadora
         static double Operar(Entidades.Numero elN1, Entidades.Numero elN2, string elOperador)
         {
             return Entidades.Calculadora.Operador(elN1, elN2, elOperador);
         }
+        private void Limpiar()
+        {
+            this.labelResultado.Text = "";
+            this.txtNumero1.Text = "";
+            this.txtNumero2.Text = "";
+            this.comboBox2.Text = "";
+        }
+        #endregion
+
+        #region Botones
         /// <summary>
         /// realiza la operacion aritmetica entre los dos numeros a traves del metodo Operar
         /// </summary>
@@ -44,13 +70,7 @@ namespace MiCalculadora
         /// <summary>
         /// "Limpia" Los campos de texto del form
         /// </summary>
-        private void Limpiar()
-        {
-            this.labelResultado.Text = "";
-            this.txtNumero1.Text = "";
-            this.txtNumero2.Text = "";
-            this.comboBox2.Text = "";
-        }
+
         /// <summary>
         /// Cierra el Windows form
         /// </summary>
@@ -58,7 +78,9 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult respuesta = MessageBox.Show("Esta seguro?","Salir?", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if(respuesta==DialogResult.Yes)
+                this.Dispose();
         }
         /// <summary>
         /// convierte el resultado de la operacion aritmetica a binario
@@ -88,5 +110,6 @@ namespace MiCalculadora
             else
                 this.labelResultado.Text = aux.BinarioDecimal(num);
         }
+        #endregion
     }
 }
