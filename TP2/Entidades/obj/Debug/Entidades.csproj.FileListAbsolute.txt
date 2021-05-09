@@ -21,3 +21,5 @@ C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIME
 C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP2\Entidades\obj\Debug\Entidades.dll
 C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP2\Entidades\bin\Debug\Entidades.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\PRIMERCUATRI2021\tp_laboratorio_2\TP2\Entidades\bin\Debug\Entidades.pdb
