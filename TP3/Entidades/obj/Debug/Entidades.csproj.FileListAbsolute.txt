@@ -1,0 +1,6 @@
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Entidades\obj\Debug\Entidades.pdb

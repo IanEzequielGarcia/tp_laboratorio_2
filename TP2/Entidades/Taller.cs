@@ -68,16 +68,13 @@ namespace Entidades
                     {
                         miString += $"{v.Mostrar()}\n";
                     }
-                    else 
+                    else if (tipo == ETipo.SUV && v is Suv)
                     {
-                        if (tipo == ETipo.SUV && v is Suv)
-                        {
-                            miString += $"{v.Mostrar()}\n";
-                        }
-                        else if (tipo == ETipo.Ciclomotor && v is Ciclomotor)
-                        {
-                            miString += $"{v.Mostrar()}\n";
-                        }
+                        miString += $"{v.Mostrar()}\n";
+                    }
+                    else if (tipo == ETipo.Ciclomotor && v is Ciclomotor)
+                    {
+                        miString += $"{v.Mostrar()}\n";
                     }
                 }
                 else
