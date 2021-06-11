@@ -1,0 +1,19 @@
+﻿Deposito-------------------
+CantidadMaxima: 5
+Listado:
+Computadora----------
+CPU: costeProduccion:500 Gama:Baja Tipo:Comun  MarcaProcesador:Intel Gen:Gen7 Modelo:i3-7100 Cores:4 Hercios:3 
+GPU: costeProduccion:1000 Gama:Baja Tipo:Comun  MarcaGrafica:NVIDIA Modelo:GT-1030 Cores:4 Hercios:2 
+Precio total de componentes: 1500
+MineroBitcoin----------
+GPU: costeProduccion:3000 Gama:Media Tipo:Gamer  MarcaGrafica:NVIDIA Modelo:GTX 2050 Cores:8 Hercios:4 
+GPU: costeProduccion:8000 Gama:Alta Tipo:Industrial  MarcaGrafica:Blanca Modelo:Shinji44 Cores:16 Hercios:8 
+Coste total de componentes : 11000
+Servidor----------
+Espacio Disco duro: 50
+CPU: costeProduccion:500 Gama:Baja Tipo:Comun  MarcaProcesador:Intel Gen:Gen7 Modelo:i3-7100 Cores:4 Hercios:3 
+CPU: costeProduccion:1000 Gama:Media Tipo:Gamer  MarcaProcesador:AMD Gen:Gen5 Modelo:Ryzen 5 Cores:8 Hercios:3 
+Coste total de componentes : 1500
+
+
+

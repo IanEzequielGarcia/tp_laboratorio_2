@@ -31,21 +31,31 @@ namespace Test
             auxList2.Add(p3);
             Servidor s1 = new Servidor(auxList2, 50);
 
-            FabricaDeposito<Computadora> f1 = new FabricaDeposito<Computadora>(5);
-            f1.Agregar(c1);
-            f1.Agregar(c2);
-            FabricaDeposito<MineroBitcoin> f2 = new FabricaDeposito<MineroBitcoin>(2);
-            f2.Agregar(m1);
-            FabricaDeposito<Servidor> f3 = new FabricaDeposito<Servidor>(1);
-            f3.Agregar(s1);
+            FabricaDeposito<TiposElectronicos> f1 = new FabricaDeposito<TiposElectronicos>(5);
+            f1 += c1;
+            f1 += m1;
+            f1 += s1;
 
-            Console.Write(c1.ToString());
-            Console.Write(c2.ToString());
-            Console.Write(m1.ToString());
+            Console.WriteLine(c1.ToString());
+            Console.WriteLine(c2.ToString());
+            Console.WriteLine(m1.ToString());
+            Console.WriteLine(s1.ToString());
 
             Console.Write(f1.ToString());
-            Console.Write(f2.ToString());
-            Console.Write(f3.ToString());
+            //Console.Write(f2.ToString());
+            //Console.Write(f3.ToString());
+            //f1 -= c1;
+            //f1 -= c2;
+            //f1 += m1;
+            //f1 += s1;
+
+            Console.Write(f1.ToString());
+            
+            GuardarYSerializar.GuardarTexto("Archivo.txt", f1);
+            Console.WriteLine(GuardarYSerializar.LeerTexto("Archivo.txt"));
+            GuardarYSerializar.SerializarXML("Archivo.xml",f1);
+            GuardarYSerializar.DeSerializarXML<TiposElectronicos>(@"Archivo.xml");
+
             Console.ReadKey();
         }
     }

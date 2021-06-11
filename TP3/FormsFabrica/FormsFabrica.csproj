@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarGrafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarGrafica.Designer.cs">
+      <DependentUpon>AgregarGrafica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProcesador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProcesador.Designer.cs">
+      <DependentUpon>AgregarProcesador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMostrar.Designer.cs">
+      <DependentUpon>FormMostrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarGrafica.resx">
+      <DependentUpon>AgregarGrafica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProcesador.resx">
+      <DependentUpon>AgregarProcesador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMostrar.resx">
+      <DependentUpon>FormMostrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{580ba7fe-fbea-4939-92ef-fe6ae5789252}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

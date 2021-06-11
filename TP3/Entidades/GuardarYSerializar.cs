@@ -11,7 +11,7 @@ namespace Entidades
 {
     public class GuardarYSerializar
     {
-        public void GuardarTexto(string archivo,object guardado)
+        public static void GuardarTexto(string archivo,object guardado)
         {
             try
             {
@@ -22,11 +22,11 @@ namespace Entidades
             }
             catch(Exception e)
             {
-                Console.WriteLine("Error al guardar");
+                throw new Exception(e.Message);
             }
 
         }
-        public string LeerTexto(string path)
+        public static string LeerTexto(string path)
         {
             string aux="Nada para leer";
             try 
@@ -37,40 +37,41 @@ namespace Entidades
             }
             catch(Exception e)
             {
-                Console.WriteLine("Error al leer");
+                throw new Exception(e.Message);
             }
             return aux;
         }
-        public void SerializarXML<T>(string path) where T : FabricaDeposito<T>
+        public static void SerializarXML(string path, object ingresado)
         {
             try
             {
-                FabricaDeposito<T> p = new FabricaDeposito<T>();
-                XmlSerializer ser = new XmlSerializer(typeof(FabricaDeposito<T>));
-                XmlTextWriter writer = new XmlTextWriter(path, Encoding.UTF8);
-                ser.Serialize(writer, p);
-                writer.Close();
+                using (XmlTextWriter writer = new XmlTextWriter(path, Encoding.UTF8))
+                {
+                    XmlSerializer ser = new XmlSerializer(typeof(FabricaDeposito<TiposElectronicos>));
+                    ser.Serialize(writer, ingresado);
+                }
+
             }
             catch(Exception e)
             {
-                Console.WriteLine("Error al serializar");
+                throw new Exception(e.Message);
             }
         }
-        public void DeSerializarXML<T>(string path) where T : FabricaDeposito<T>
+        public static FabricaDeposito<T> DeSerializarXML<T>(string path) where T : TiposElectronicos
         {
             try 
             {
                 FabricaDeposito<T> aux = new FabricaDeposito<T>();
-                XmlTextReader reader = new XmlTextReader(path); //Objeto que leerá XML.
-                XmlSerializer ser = new XmlSerializer(typeof(FabricaDeposito<T>)); //Objeto que Deserializará.
+                XmlTextReader reader = new XmlTextReader(path);
+                XmlSerializer ser = new XmlSerializer(typeof(FabricaDeposito<T>));
                 aux = (FabricaDeposito<T>)ser.Deserialize(reader);
                 reader.Close();
+                return aux;
             }
             catch(Exception e)
             {
-                Console.WriteLine("Error al deserializar");
+                throw new Exception(e.Message);
             }
-
         }
     }
 }

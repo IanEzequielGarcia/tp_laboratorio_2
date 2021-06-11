@@ -6,20 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Computadora
+    public class Computadora:TiposElectronicos
     {
-        #region Atributos y propiedades
-        public float precioTotal;
-        public Procesador procesador;
-        public Grafica grafica;
-        public float PrecioTotal 
-        {
-            get {
-                    if (this.precioTotal == 0)
-                        this.CalcularPrecioTotal();
-                    return this.precioTotal;
-                }
-        }
+        #region Atributos
+        private Procesador procesador;
+        private Grafica grafica;
+        public Procesador ElProcesador { get {return this.procesador; }set { this.procesador = value; } }
+        public Grafica Lagrafica { get { return this.grafica; } set { this.grafica = value; } }
         #endregion
 
         #region Constructores
@@ -39,18 +32,17 @@ namespace Entidades
         #endregion
 
         #region Metodos y sobrecargas
-        public void CalcularPrecioTotal()
+        public override void CalcularPrecioTotal()
         {
             this.precioTotal = this.procesador.CosteProduccion + this.grafica.CosteProduccion;
         }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("COMPUTADORA-------------------");
             sb.Append($"CPU: {this.procesador.ToString()}");
             if(!(this.grafica.Modelo=="Sin grafica"))
                 sb.Append($"GPU: {this.grafica.ToString()}");
-            sb.AppendLine($"Precio total de componentes: {this.PrecioTotal}\n");
+            sb.AppendLine($"Precio total de componentes: {this.PrecioTotal}");
             return sb.ToString();
         }
         #endregion

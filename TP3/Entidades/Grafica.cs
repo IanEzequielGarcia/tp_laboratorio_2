@@ -16,9 +16,9 @@ namespace Entidades
         #region atributos
         public string Modelo { get; set; }
         public float Hercio { get; set; }
-
         public int Cores { get; set; }
         MarcaGrafica marca;
+        public MarcaGrafica Marca { get { return this.marca; }set { this.marca = value; }}
         #endregion
 
         #region Constructores

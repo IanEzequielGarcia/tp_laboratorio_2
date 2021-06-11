@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+using System.Xml;
+using System.Xml.Serialization;
 namespace Entidades
 {
-
+    [Serializable]
+    [XmlInclude(typeof(Procesador)), XmlInclude(typeof(Grafica))]
     public abstract class Producto
     {
         #region enum 

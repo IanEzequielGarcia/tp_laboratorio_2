@@ -6,21 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Servidor
+    public class Servidor : TiposElectronicos
     {
         #region Atributos y Propiedades
-        float precioTotal;
-        List<Procesador> procesadores;
-        int espacioDiscoDuro;
-        public float PrecioTotal
-        {
-            get
-            {
-                if (this.precioTotal == 0)
-                    this.CalcularPrecioTotal();
-                return this.precioTotal;
-            }
-        }
+        private List<Procesador> procesadores;
+        private int espacioDiscoDuro;
+        public List<Procesador> Procesadores { get { return this.procesadores; }}
+        public int EspacioDiscoDuro { get { return this.espacioDiscoDuro; }set { this.espacioDiscoDuro = value; } }
+
         #endregion
 
         #region Constructores
@@ -36,7 +29,7 @@ namespace Entidades
         #endregion
 
         #region Metodos y sobrecargas
-        public void CalcularPrecioTotal()
+        public override void CalcularPrecioTotal()
         {
             foreach (Procesador Procesador in this.procesadores)
                 if ((object)Procesador != null)
@@ -45,7 +38,6 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Servidor-------------------------");
             sb.AppendLine($"Espacio Disco duro: {this.espacioDiscoDuro}");
             foreach (Procesador Procesador in this.procesadores)
                 if ((object)Procesador != null)

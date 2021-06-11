@@ -6,20 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class MineroBitcoin
+    public class MineroBitcoin : TiposElectronicos
     {
         #region Atributos y Propiedades
-        float precioTotal;
         List<Grafica> minadores;
-        public float PrecioTotal
-        {
-            get
-            {
-                if (this.precioTotal == 0)
-                    this.CalcularPrecioTotal();
-                return this.precioTotal;
-            }
-        }
+        public List<Grafica> Minadores { get { return this.minadores; } }
         #endregion
 
         #region Constructores
@@ -34,7 +25,7 @@ namespace Entidades
         #endregion
 
         #region Metodos y sobrecargas
-        public void CalcularPrecioTotal()
+        public override void CalcularPrecioTotal()
         {
             foreach(Grafica grafica in this.minadores)
                 if((object)grafica!=null)
@@ -43,11 +34,10 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("MineroBTC-------------------------");
             foreach (Grafica grafica in this.minadores)
                 if ((object)grafica != null)
                     sb.Append($"GPU: {grafica.ToString()}");
-            sb.AppendLine($"Coste total de componentes : {this.PrecioTotal}\n");
+            sb.AppendLine($"Coste total de componentes : {this.PrecioTotal}");
             return sb.ToString();
         }
         #endregion

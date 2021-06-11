@@ -1,0 +1,9 @@
+﻿Deposito-------------------
+CantidadMaxima: 100
+Listado:
+Computadora----------
+CPU: costeProduccion:0 Gama:Baja Tipo:Comun  MarcaProcesador:Intel Gen:Gen3 Modelo: Cores:0 Hercios:0 
+GPU: costeProduccion:0 Gama:Baja Tipo:Comun  MarcaGrafica:NVIDIA Modelo: Cores:0 Hercios:0 
+Precio total de componentes: 0
+
+

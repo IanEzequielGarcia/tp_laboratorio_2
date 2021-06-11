@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-
     public class Procesador : Producto, IComponente
     {
         #region enum 
@@ -15,13 +14,17 @@ namespace Entidades
 
         #endregion
 
-        #region atributos 
+        #region atributos y Propiedades
+
         public string Modelo { get; set; }
         public float Hercio {get; set;}
         public int Cores { get; set; }
+        private MarcaProcesador marcaProcesador;
+        public MarcaProcesador MarcaProcesadores { get { return this.marcaProcesador; } set { this.marcaProcesador = value; } }
 
-        MarcaProcesador marcaProcesador;
         Generacion gen;
+        public Generacion Gen { get { return this.gen; }set {this.gen=value; } }
+
         #endregion
 
         #region Constructores
