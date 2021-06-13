@@ -10,26 +10,32 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            Grafica g1 = new Grafica("GT-1030", 2,4, Grafica.MarcaGrafica.NVIDIA, 1000, Producto.GamaProducto.Baja, Producto.TipoProducto.Comun);
-            Grafica g2 = new Grafica("GTX 2050", 4,8, Grafica.MarcaGrafica.NVIDIA, 3000, Producto.GamaProducto.Media, Producto.TipoProducto.Gamer);
-            Grafica g4 = new Grafica("Shinji44", 8, 16, Grafica.MarcaGrafica.Blanca, 8000, Producto.GamaProducto.Alta, Producto.TipoProducto.Industrial);
+            Grafica g1 = new Grafica("GT-1030",4, Grafica.MarcaGrafica.NVIDIA, 1000, Producto.GamaProducto.Baja, Producto.TipoProducto.Comun);
+            Grafica g2 = new Grafica("GTX 2050",8, Grafica.MarcaGrafica.NVIDIA, 3000, Producto.GamaProducto.Media, Producto.TipoProducto.Gamer);
+            Grafica g4 = new Grafica("Shinji44", 16, Grafica.MarcaGrafica.Blanca, 8000, Producto.GamaProducto.Alta, Producto.TipoProducto.Industrial);
 
-            Procesador p1 = new Procesador("i3-7100",3,4,Procesador.MarcaProcesador.Intel,Procesador.Generacion.Gen7,500,Producto.GamaProducto.Baja,Producto.TipoProducto.Comun);
-            Procesador p2 = new Procesador("Beijing9000", 6, 16, Procesador.MarcaProcesador.Blanca, Procesador.Generacion.Otro, 5000, Producto.GamaProducto.Alta, Producto.TipoProducto.Industrial);
-            Procesador p3 = new Procesador("Ryzen 5", 3, 8, Procesador.MarcaProcesador.AMD, Procesador.Generacion.Gen5,1000, Producto.GamaProducto.Media, Producto.TipoProducto.Gamer);
+            Procesador p1 = new Procesador("i3-7100",4,Procesador.MarcaProcesador.Intel,Procesador.Generacion.Gen7,500,Producto.GamaProducto.Baja,Producto.TipoProducto.Comun);
+            Procesador p2 = new Procesador("Beijing9000", 16, Procesador.MarcaProcesador.Blanca, Procesador.Generacion.Otro, 5000, Producto.GamaProducto.Alta, Producto.TipoProducto.Industrial);
+            Procesador p3 = new Procesador("Ryzen 5", 8, Procesador.MarcaProcesador.AMD, Procesador.Generacion.Gen5,1000, Producto.GamaProducto.Media, Producto.TipoProducto.Gamer);
 
             Computadora c1 = new Computadora(p1, g1);
             Computadora c2 = new Computadora(p2);
 
             List<Grafica> auxList = new List<Grafica>();
+            ((IComponente)g1).CalcularVelocidad();
+            ((IComponente)g2).CalcularVelocidad();
+            ((IComponente)g4).CalcularVelocidad();
             auxList.Add(g2);
             auxList.Add(g4);
             MineroBitcoin m1 = new MineroBitcoin(auxList);
 
             List<Procesador> auxList2 = new List<Procesador>();
+            ((IComponente)p1).CalcularVelocidad();
+            ((IComponente)p2).CalcularVelocidad();
+            ((IComponente)p3).CalcularVelocidad();
             auxList2.Add(p1);
             auxList2.Add(p3);
-            Servidor s1 = new Servidor(auxList2, 50);
+            Servidor s1 = new Servidor(auxList2);
 
             FabricaDeposito<TiposElectronicos> f1 = new FabricaDeposito<TiposElectronicos>(5);
             f1 += c1;
@@ -52,10 +58,14 @@ namespace Test
             Console.Write(f1.ToString());
             
             GuardarYSerializar.GuardarTexto("Archivo.txt", f1);
+            Console.WriteLine("\n\nArchivo Leido de texto\n\n");
             Console.WriteLine(GuardarYSerializar.LeerTexto("Archivo.txt"));
-            GuardarYSerializar.SerializarXML("Archivo.xml",f1);
-            GuardarYSerializar.DeSerializarXML<TiposElectronicos>(@"Archivo.xml");
 
+            GuardarYSerializar.SerializarXML("Archivo.xml",f1);
+            Console.WriteLine("\n\nArchivo Leido de XML\n\n");
+            f1=GuardarYSerializar.DeSerializarXML<TiposElectronicos>("Archivo.xml");
+
+            Console.Write(f1.ToString());
             Console.ReadKey();
         }
     }

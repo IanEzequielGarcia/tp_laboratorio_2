@@ -17,6 +17,9 @@ namespace Entidades
         #endregion 
 
         #region metodos 
+        /// <summary>
+        /// si el preciototal es por defecto(0) lo calcula y lo devuelve
+        /// </summary>
         abstract public void CalcularPrecioTotal();
         public float PrecioTotal
         {

@@ -12,8 +12,6 @@ namespace FormsFabrica
 {
     public partial class AgregarProcesador : Form
     {
-        private float herciosForm;
-        public float HerciosForm { get { return this.herciosForm; } }
         private int coresForm;
         public int CoresForm { get { return this.coresForm; } }
         private string modelo;
@@ -44,7 +42,6 @@ public AgregarProcesador()
         {
             try
             {
-                float.TryParse(this.txtHercio.Text, out this.herciosForm);
                 float.TryParse(this.txtPrecio.Text, out this.precioForm);
                 int.TryParse(this.txtCores.Text, out this.coresForm);
                 this.modelo = txtModelo.Text;

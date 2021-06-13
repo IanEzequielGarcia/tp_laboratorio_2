@@ -38,12 +38,19 @@ namespace Entidades
         }
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Append($"CPU: {this.procesador.ToString()}");
-            if(!(this.grafica.Modelo=="Sin grafica"))
-                sb.Append($"GPU: {this.grafica.ToString()}");
-            sb.AppendLine($"Precio total de componentes: {this.PrecioTotal}");
-            return sb.ToString();
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append($"CPU: {this.procesador.ToString()}");
+                if (!(this.grafica.Modelo == "Sin grafica"))
+                    sb.Append($"GPU: {this.grafica.ToString()}");
+                sb.AppendLine($"Precio total de componentes: {this.PrecioTotal}");
+                return sb.ToString();
+            }
+            catch (Exception b)
+            {
+                throw new Excepciones(b.Message);
+            }
         }
         #endregion
 

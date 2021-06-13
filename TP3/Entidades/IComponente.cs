@@ -15,6 +15,9 @@ namespace Entidades
         #endregion
 
         #region metodos
+        /// <summary>
+        /// Calcula los hercios con un Random
+        /// </summary>
         void CalcularVelocidad();
         #endregion
     }

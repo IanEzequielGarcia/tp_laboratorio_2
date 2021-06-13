@@ -155,9 +155,9 @@ namespace FormsFabrica
             this.lblCargarXML.AutoSize = true;
             this.lblCargarXML.Location = new System.Drawing.Point(133, 185);
             this.lblCargarXML.Name = "lblCargarXML";
-            this.lblCargarXML.Size = new System.Drawing.Size(97, 13);
+            this.lblCargarXML.Size = new System.Drawing.Size(86, 13);
             this.lblCargarXML.TabIndex = 14;
-            this.lblCargarXML.Text = "Cargar Desde XML";
+            this.lblCargarXML.Text = "Deserializar XML";
             // 
             // btnCargarTexto
             // 

@@ -33,8 +33,6 @@ namespace FormsFabrica
             this.label6 = new System.Windows.Forms.Label();
             this.txtCores = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtHercio = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,7 +50,7 @@ namespace FormsFabrica
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 187);
+            this.label7.Location = new System.Drawing.Point(28, 148);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 22;
@@ -61,7 +59,7 @@ namespace FormsFabrica
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(40, 147);
+            this.label6.Location = new System.Drawing.Point(43, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 20;
@@ -82,22 +80,6 @@ namespace FormsFabrica
             this.label5.Size = new System.Drawing.Size(34, 13);
             this.label5.TabIndex = 18;
             this.label5.Text = "Cores";
-            // 
-            // txtHercio
-            // 
-            this.txtHercio.Location = new System.Drawing.Point(13, 124);
-            this.txtHercio.Name = "txtHercio";
-            this.txtHercio.Size = new System.Drawing.Size(100, 20);
-            this.txtHercio.TabIndex = 17;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Hercio";
             // 
             // label3
             // 
@@ -127,7 +109,7 @@ namespace FormsFabrica
             // btnAceptar
             // 
             this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnAceptar.Location = new System.Drawing.Point(12, 360);
+            this.btnAceptar.Location = new System.Drawing.Point(12, 344);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(99, 26);
             this.btnAceptar.TabIndex = 24;
@@ -143,7 +125,7 @@ namespace FormsFabrica
             "Intel",
             "AMD",
             "Blanca"});
-            this.comboBoxMarca.Location = new System.Drawing.Point(12, 163);
+            this.comboBoxMarca.Location = new System.Drawing.Point(13, 124);
             this.comboBoxMarca.Name = "comboBoxMarca";
             this.comboBoxMarca.Size = new System.Drawing.Size(99, 21);
             this.comboBoxMarca.TabIndex = 30;
@@ -157,7 +139,7 @@ namespace FormsFabrica
             "Gen5",
             "Gen7",
             "Otro"});
-            this.comboBoxGeneracion.Location = new System.Drawing.Point(12, 203);
+            this.comboBoxGeneracion.Location = new System.Drawing.Point(13, 164);
             this.comboBoxGeneracion.Name = "comboBoxGeneracion";
             this.comboBoxGeneracion.Size = new System.Drawing.Size(99, 21);
             this.comboBoxGeneracion.TabIndex = 31;
@@ -165,7 +147,7 @@ namespace FormsFabrica
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(12, 227);
+            this.lblPrecio.Location = new System.Drawing.Point(12, 188);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(92, 13);
             this.lblPrecio.TabIndex = 32;
@@ -173,7 +155,7 @@ namespace FormsFabrica
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(12, 243);
+            this.txtPrecio.Location = new System.Drawing.Point(12, 204);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 33;
@@ -186,7 +168,7 @@ namespace FormsFabrica
             "Baja",
             "Media",
             "Alta"});
-            this.comboGama.Location = new System.Drawing.Point(13, 282);
+            this.comboGama.Location = new System.Drawing.Point(12, 243);
             this.comboGama.Name = "comboGama";
             this.comboGama.Size = new System.Drawing.Size(99, 21);
             this.comboGama.TabIndex = 34;
@@ -194,7 +176,7 @@ namespace FormsFabrica
             // lblGama
             // 
             this.lblGama.AutoSize = true;
-            this.lblGama.Location = new System.Drawing.Point(38, 266);
+            this.lblGama.Location = new System.Drawing.Point(41, 227);
             this.lblGama.Name = "lblGama";
             this.lblGama.Size = new System.Drawing.Size(35, 13);
             this.lblGama.TabIndex = 35;
@@ -203,7 +185,7 @@ namespace FormsFabrica
             // lbltipo
             // 
             this.lbltipo.AutoSize = true;
-            this.lbltipo.Location = new System.Drawing.Point(40, 306);
+            this.lbltipo.Location = new System.Drawing.Point(43, 267);
             this.lbltipo.Name = "lbltipo";
             this.lbltipo.Size = new System.Drawing.Size(28, 13);
             this.lbltipo.TabIndex = 36;
@@ -217,7 +199,7 @@ namespace FormsFabrica
             "Comun",
             "Industrial",
             "Gamer"});
-            this.comboTipo.Location = new System.Drawing.Point(12, 322);
+            this.comboTipo.Location = new System.Drawing.Point(12, 283);
             this.comboTipo.Name = "comboTipo";
             this.comboTipo.Size = new System.Drawing.Size(99, 21);
             this.comboTipo.TabIndex = 37;
@@ -240,12 +222,13 @@ namespace FormsFabrica
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtCores);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtHercio);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AgregarProcesador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AgregarProcesador";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -257,8 +240,6 @@ namespace FormsFabrica
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCores;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtHercio;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label1;

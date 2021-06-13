@@ -11,6 +11,11 @@ namespace Entidades
 {
     public class GuardarYSerializar
     {
+        /// <summary>
+        /// Guarda el objeto en modo txt en el path indicado
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="guardado"></param>
         public static void GuardarTexto(string archivo,object guardado)
         {
             try
@@ -26,6 +31,11 @@ namespace Entidades
             }
 
         }
+        /// <summary>
+        /// Lee un archivo TXT y lo devuelve como string
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static string LeerTexto(string path)
         {
             string aux="Nada para leer";
@@ -41,6 +51,11 @@ namespace Entidades
             }
             return aux;
         }
+        /// <summary>
+        /// Serializa a XML el objeto ingresado y lo guarda en el path
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="ingresado"></param>
         public static void SerializarXML(string path, object ingresado)
         {
             try
@@ -57,6 +72,12 @@ namespace Entidades
                 throw new Exception(e.Message);
             }
         }
+        /// <summary>
+        /// Deseraliza una fabrica de Tipos electronicos y lo devuelve
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static FabricaDeposito<T> DeSerializarXML<T>(string path) where T : TiposElectronicos
         {
             try 

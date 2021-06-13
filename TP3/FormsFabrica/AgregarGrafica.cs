@@ -13,8 +13,6 @@ namespace FormsFabrica
 {
     public partial class AgregarGrafica : Form
     {
-        private float herciosForm;
-        public float HerciosForm { get { return this.herciosForm; } }
         private int coresForm;
         public int CoresForm { get { return this.coresForm; } }
         private string modelo;
@@ -39,7 +37,6 @@ namespace FormsFabrica
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            float.TryParse(this.txtHercio.Text, out this.herciosForm);
             float.TryParse(this.txtPrecio.Text, out this.precioForm);
             int.TryParse(this.txtCores.Text, out this.coresForm);
             this.modelo = txtModelo.Text;

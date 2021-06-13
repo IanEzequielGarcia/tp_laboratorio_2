@@ -22,17 +22,29 @@ namespace Entidades
         #endregion
 
         #region Constructores
+        /// <summary>
+        /// Constructor por defecto
+        /// </summary>
         public Grafica()
         {
             this.Modelo = "Sin grafica";
         }
-        public Grafica(string modelo,float hercio,int cores, MarcaGrafica marca,
+        /// <summary>
+        /// Constructor parametrizado
+        /// </summary>
+        /// <param name="modelo"></param>
+        /// <param name="cores"></param>
+        /// <param name="marca"></param>
+        /// <param name="precio"></param>
+        /// <param name="gama"></param>
+        /// <param name="tipo"></param>
+        public Grafica(string modelo,int cores, MarcaGrafica marca,
             float precio, GamaProducto gama,TipoProducto tipo):base(precio,gama,tipo)
         {
             this.Modelo = modelo;
             this.Cores = cores;
             this.marca = marca;
-            this.Hercio = hercio;
+            
         }
         #endregion
 
@@ -41,17 +53,34 @@ namespace Entidades
         {
             Random random = new Random();
             this.Hercio = 10 * (float)random.NextDouble();
-            throw new NotImplementedException();
         }
+        /// <summary>
+        /// Devuelve un string con todos los atributos de grafica
+        /// </summary>
+        /// <returns></returns>
         protected override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append($"{base.Mostrar()} MarcaGrafica:{this.marca} Modelo:{this.Modelo} Cores:{this.Cores} Hercios:{this.Hercio} \n");
             return sb.ToString();
         }
+        /// <summary>
+        /// devuelve el string de la clase protegida Mostrar
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.Mostrar();
+        }
+        /// <summary>
+        /// devuelve true si todos los atributos tienen algo asignado, false en caso contrario
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public static bool Validar(Grafica p)
+        {
+            return (p.Modelo== "Sin grafica") || !(string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Hercio, null) || ReferenceEquals(p.Marca, null)
+                   || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) || ReferenceEquals(p.Cores, null));
         }
         #endregion
     }

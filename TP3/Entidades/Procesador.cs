@@ -28,14 +28,26 @@ namespace Entidades
         #endregion
 
         #region Constructores
+        /// <summary>
+        /// Constructor por defecto
+        /// </summary>
         public Procesador()
         {
         }
-        public Procesador(string modelo,float hercio,int cores,MarcaProcesador MarcaProcesador, Generacion gen,
+        /// <summary>
+        /// Constructor parametrizado
+        /// </summary>
+        /// <param name="modelo"></param>
+        /// <param name="cores"></param>
+        /// <param name="MarcaProcesador"></param>
+        /// <param name="gen"></param>
+        /// <param name="precio"></param>
+        /// <param name="gama"></param>
+        /// <param name="tipo"></param>
+        public Procesador(string modelo,int cores,MarcaProcesador MarcaProcesador, Generacion gen,
             float precio,GamaProducto gama, TipoProducto tipo):base(precio,gama,tipo)
         {
             this.Modelo = modelo;
-            this.Hercio = hercio;
             this.Cores = cores;
             this.marcaProcesador = MarcaProcesador;
             this.gen = gen;
@@ -43,6 +55,12 @@ namespace Entidades
         #endregion
 
         #region Metodos y Sobrecargas
+        /// <summary>
+        /// Comprueba que los atributos de dos procesadores sean iguales
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
         public static bool operator ==(Procesador p1, Procesador p2)
         {
             return (p1.Modelo == p2.Modelo && p1.marcaProcesador == p2.marcaProcesador && p1.gen==p2.gen && ((Producto)p1) == ((Producto)p2) );
@@ -51,12 +69,20 @@ namespace Entidades
         {
             return !(p1 == p2);
         }
+        /// <summary>
+        /// Devuelve los atributos de Procesador en string
+        /// </summary>
+        /// <returns></returns>
         protected override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append($"{base.Mostrar()} MarcaProcesador:{this.marcaProcesador} Gen:{this.gen} Modelo:{this.Modelo} Cores:{this.Cores} Hercios:{this.Hercio} \n");
             return sb.ToString();
         }
+        /// <summary>
+        /// Devuelve el string de mostrar
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.Mostrar();
@@ -65,7 +91,16 @@ namespace Entidades
         {
             Random random = new Random();
             this.Hercio = 10 * (float)random.NextDouble();
-            throw new NotImplementedException();
+        }
+        /// <summary>
+        /// Valida los atributos de Procesador
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public static bool Validar(Procesador p)
+        {
+            return !(string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Hercio, null) || ReferenceEquals(p.MarcaProcesadores, null)
+                   || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) || ReferenceEquals(p.Gen, null) || ReferenceEquals(p.Cores, null));
         }
         #endregion
     }

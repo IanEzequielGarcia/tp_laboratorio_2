@@ -23,35 +23,38 @@ namespace FormsFabrica
         private void btnCrearCompu_Click(object sender, EventArgs e)
         {
             AgregarProcesador formProcesador = new AgregarProcesador();
+            AgregarGrafica formGrafica = new AgregarGrafica();
             Procesador procesadorAux=null;
+            Grafica graficaAux = null;
             Computadora computadoraAux=null;
             formProcesador.ShowDialog();
             if(formProcesador.DialogResult==DialogResult.OK)
             {
                 try 
                 {
-                    procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.HerciosForm, formProcesador.CoresForm,
+                    procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
                         formProcesador.MarcaProcesador, formProcesador.GeneracionProcesador, formProcesador.PrecioForm,
                         formProcesador.GamaProcesador, formProcesador.TipoProcesador);
+                    ((IComponente)procesadorAux).CalcularVelocidad();
+
                 }
                 catch(Exception b)
                 {
                     throw new Excepciones(b);
                 }
-
             }
             DialogResult respuesta = MessageBox.Show("Instalar grafica?", "Elija", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (respuesta == DialogResult.Yes)
             {
                 try
                 {
-                    AgregarGrafica formGrafica = new AgregarGrafica();
                     formGrafica.ShowDialog();
                     if (formProcesador.DialogResult == DialogResult.OK)
                     {
-                        Grafica graficaAux = new Grafica(formGrafica.Modelo, formGrafica.HerciosForm, formGrafica.CoresForm,
+                        graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
                              formGrafica.MarcaGrafica, formGrafica.PrecioForm,
                              formGrafica.GamaGrafica, formGrafica.TipoGrafica);
+                        ((IComponente)graficaAux).CalcularVelocidad();
                         computadoraAux = new Computadora(procesadorAux, graficaAux);
                     }
                 }
@@ -61,8 +64,16 @@ namespace FormsFabrica
                 }
             }
             else { computadoraAux = new Computadora(procesadorAux); }
+
+            if (Procesador.Validar(computadoraAux.ElProcesador) &&Grafica.Validar(computadoraAux.Lagrafica))
+            {
+                this.miFabrica += computadoraAux;
+            }
+            else
+            {
+                MessageBox.Show("Reingrese los datos");
+            }
             
-            this.miFabrica += computadoraAux;
         }
 
         private void btnCrearServer_Click(object sender, EventArgs e)
@@ -79,23 +90,33 @@ namespace FormsFabrica
                     formProcesador.ShowDialog();
                     if (formProcesador.DialogResult == DialogResult.OK)
                     {
-                        procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.HerciosForm, formProcesador.CoresForm,
+                        procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
                             formProcesador.MarcaProcesador, formProcesador.GeneracionProcesador, formProcesador.PrecioForm,
                             formProcesador.GamaProcesador, formProcesador.TipoProcesador);
-                        listaAux.Add(procesadorAux);
+                        ((IComponente)procesadorAux).CalcularVelocidad();
+
+                        if(Procesador.Validar(procesadorAux))
+                        { listaAux.Add(procesadorAux); }
                     }
                     respuesta = MessageBox.Show("Instalar otro procesador??", "Elija", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 }
                 catch (Exception b)
                 {
-
                     throw new Excepciones(b);
                 }
             } while (respuesta == DialogResult.Yes);
 
-            servidorAux = new Servidor(listaAux, 100);
-            this.miFabrica += servidorAux;
+            servidorAux = new Servidor(listaAux);
+            if(listaAux.Count>0)
+            {
+                this.miFabrica += servidorAux;
+            }
+            else
+            {
+                MessageBox.Show("Reingrese los datos");
+            }
+            
         }
 
         private void btnCrearMinero_Click(object sender, EventArgs e)
@@ -112,10 +133,13 @@ namespace FormsFabrica
                     formGrafica.ShowDialog();
                     if (formGrafica.DialogResult == DialogResult.OK)
                     {
-                        graficaAux = new Grafica(formGrafica.Modelo, formGrafica.HerciosForm, formGrafica.CoresForm,
+                        graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
                             formGrafica.MarcaGrafica, formGrafica.PrecioForm,
                             formGrafica.GamaGrafica, formGrafica.TipoGrafica);
-                        listaAux.Add(graficaAux);
+                        ((IComponente)graficaAux).CalcularVelocidad();
+
+                        if(Grafica.Validar(graficaAux))
+                        { listaAux.Add(graficaAux); }
                     }
                     respuesta = MessageBox.Show("Instalar otra grafica??", "Elija", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -128,7 +152,14 @@ namespace FormsFabrica
             } while (respuesta == DialogResult.Yes);
 
             servidorAux = new MineroBitcoin(listaAux);
-            this.miFabrica += servidorAux;
+            if (listaAux.Count > 0)
+            {
+                this.miFabrica += servidorAux;
+            }
+            else
+            {
+                MessageBox.Show("Reingrese los datos");
+            }
         }
 
         private void btnGuardarTxt_Click(object sender, EventArgs e)
