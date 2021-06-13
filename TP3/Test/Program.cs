@@ -22,17 +22,11 @@ namespace Test
             Computadora c2 = new Computadora(p2);
 
             List<Grafica> auxList = new List<Grafica>();
-            ((IComponente)g1).CalcularVelocidad();
-            ((IComponente)g2).CalcularVelocidad();
-            ((IComponente)g4).CalcularVelocidad();
             auxList.Add(g2);
             auxList.Add(g4);
             MineroBitcoin m1 = new MineroBitcoin(auxList);
 
             List<Procesador> auxList2 = new List<Procesador>();
-            ((IComponente)p1).CalcularVelocidad();
-            ((IComponente)p2).CalcularVelocidad();
-            ((IComponente)p3).CalcularVelocidad();
             auxList2.Add(p1);
             auxList2.Add(p3);
             Servidor s1 = new Servidor(auxList2);

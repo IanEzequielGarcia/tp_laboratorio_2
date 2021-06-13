@@ -1,18 +1,5 @@
 ﻿Deposito-------------------
 CantidadMaxima: 100
 En el Almacen:
-Computadora----------
-CPU: costeProduccion:1 Gama:Baja Tipo:Comun  MarcaProcesador:Intel Gen:Gen3 Modelo:a1 Cores:1 Hercios:3,412031 
-Precio total de componentes: 1
-Servidor----------
-Espacio Disco duro: 480
-CPU: costeProduccion:1 Gama:Baja Tipo:Comun  MarcaProcesador:Intel Gen:Gen3 Modelo:w1 Cores:11 Hercios:0,1552815 
-CPU: costeProduccion:12 Gama:Baja Tipo:Comun  MarcaProcesador:Intel Gen:Gen3 Modelo:w12 Cores:112 Hercios:8,563289 
-Coste total de componentes : 13
-
-MineroBitcoin----------
-GPU: costeProduccion:1 Gama:Baja Tipo:Comun  MarcaGrafica:NVIDIA Modelo:a12 Cores:1 Hercios:6,690789 
-GPU: costeProduccion:13 Gama:Baja Tipo:Comun  MarcaGrafica:NVIDIA Modelo:a123 Cores:12 Hercios:2,448838 
-Coste total de componentes : 14
 
 

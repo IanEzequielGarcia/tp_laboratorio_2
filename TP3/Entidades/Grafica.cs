@@ -44,7 +44,7 @@ namespace Entidades
             this.Modelo = modelo;
             this.Cores = cores;
             this.marca = marca;
-            
+            ((IComponente)this).CalcularVelocidad();
         }
         #endregion
 
@@ -79,8 +79,10 @@ namespace Entidades
         /// <returns></returns>
         public static bool Validar(Grafica p)
         {
-            return (p.Modelo== "Sin grafica") || !(string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Hercio, null) || ReferenceEquals(p.Marca, null)
-                   || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) || ReferenceEquals(p.Cores, null));
+            return !( (ReferenceEquals(p, null)) || (p.Modelo== "Sin grafica") 
+                   || (string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Marca, null)
+                   || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) || ReferenceEquals(p.Cores, null)) 
+                   );
         }
         #endregion
     }

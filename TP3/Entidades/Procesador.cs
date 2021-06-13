@@ -33,6 +33,7 @@ namespace Entidades
         /// </summary>
         public Procesador()
         {
+            this.Modelo = "Sin Procesador";
         }
         /// <summary>
         /// Constructor parametrizado
@@ -49,6 +50,7 @@ namespace Entidades
         {
             this.Modelo = modelo;
             this.Cores = cores;
+            ((IComponente)this).CalcularVelocidad();
             this.marcaProcesador = MarcaProcesador;
             this.gen = gen;
         }
@@ -99,8 +101,9 @@ namespace Entidades
         /// <returns></returns>
         public static bool Validar(Procesador p)
         {
-            return !(string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Hercio, null) || ReferenceEquals(p.MarcaProcesadores, null)
-                   || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) || ReferenceEquals(p.Gen, null) || ReferenceEquals(p.Cores, null));
+            return !( ReferenceEquals(p,null) || p.Modelo=="Sin Procesador" || string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Hercio, null)
+                   || ReferenceEquals(p.MarcaProcesadores, null)|| ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) 
+                   || ReferenceEquals(p.Gen, null) || ReferenceEquals(p.Cores, null) );
         }
         #endregion
     }

@@ -35,7 +35,6 @@ namespace FormsFabrica
                     procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
                         formProcesador.MarcaProcesador, formProcesador.GeneracionProcesador, formProcesador.PrecioForm,
                         formProcesador.GamaProcesador, formProcesador.TipoProcesador);
-                    ((IComponente)procesadorAux).CalcularVelocidad();
 
                 }
                 catch(Exception b)
@@ -43,6 +42,7 @@ namespace FormsFabrica
                     throw new Excepciones(b);
                 }
             }
+            else { procesadorAux = new Procesador(); }
             DialogResult respuesta = MessageBox.Show("Instalar grafica?", "Elija", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (respuesta == DialogResult.Yes)
             {
@@ -54,7 +54,6 @@ namespace FormsFabrica
                         graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
                              formGrafica.MarcaGrafica, formGrafica.PrecioForm,
                              formGrafica.GamaGrafica, formGrafica.TipoGrafica);
-                        ((IComponente)graficaAux).CalcularVelocidad();
                         computadoraAux = new Computadora(procesadorAux, graficaAux);
                     }
                 }
@@ -93,8 +92,6 @@ namespace FormsFabrica
                         procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
                             formProcesador.MarcaProcesador, formProcesador.GeneracionProcesador, formProcesador.PrecioForm,
                             formProcesador.GamaProcesador, formProcesador.TipoProcesador);
-                        ((IComponente)procesadorAux).CalcularVelocidad();
-
                         if(Procesador.Validar(procesadorAux))
                         { listaAux.Add(procesadorAux); }
                     }
@@ -136,8 +133,6 @@ namespace FormsFabrica
                         graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
                             formGrafica.MarcaGrafica, formGrafica.PrecioForm,
                             formGrafica.GamaGrafica, formGrafica.TipoGrafica);
-                        ((IComponente)graficaAux).CalcularVelocidad();
-
                         if(Grafica.Validar(graficaAux))
                         { listaAux.Add(graficaAux); }
                     }
