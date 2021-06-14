@@ -14,9 +14,16 @@ namespace FormsFabrica
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormFabrica());
+            try 
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new FormFabrica());
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }

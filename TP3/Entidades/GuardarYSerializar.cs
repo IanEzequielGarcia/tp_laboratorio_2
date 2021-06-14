@@ -27,7 +27,7 @@ namespace Entidades
             }
             catch(Exception e)
             {
-                throw new Exception(e.Message);
+                Console.WriteLine(e.Message);
             }
 
         }
@@ -47,7 +47,7 @@ namespace Entidades
             }
             catch(Exception e)
             {
-                throw new Exception(e.Message);
+                Console.WriteLine(e.Message);
             }
             return aux;
         }
@@ -69,7 +69,7 @@ namespace Entidades
             }
             catch(Exception e)
             {
-                throw new Exception(e.Message);
+                Console.WriteLine(e.Message);
             }
         }
         /// <summary>
@@ -80,19 +80,20 @@ namespace Entidades
         /// <returns></returns>
         public static FabricaDeposito<T> DeSerializarXML<T>(string path) where T : TiposElectronicos
         {
+            FabricaDeposito<T> aux = new FabricaDeposito<T>();
             try 
             {
-                FabricaDeposito<T> aux = new FabricaDeposito<T>();
+                
                 XmlTextReader reader = new XmlTextReader(path);
                 XmlSerializer ser = new XmlSerializer(typeof(FabricaDeposito<T>));
                 aux = (FabricaDeposito<T>)ser.Deserialize(reader);
                 reader.Close();
-                return aux;
             }
             catch(Exception e)
             {
-                throw new Exception(e.Message);
+                Console.WriteLine(e.Message);
             }
+            return aux;
         }
     }
 }
