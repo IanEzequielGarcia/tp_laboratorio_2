@@ -12,7 +12,7 @@ namespace PruebaUnita
         /// Los Agrega al deposito y chequea que se hayan agregado correctamente
         /// </summary>
         [TestMethod]
-        public void IsEqualDepositoFabrica()
+        public void AniadirDepositoFabrica()
         {
             //arrange
             int capacidad=3;
@@ -28,6 +28,34 @@ namespace PruebaUnita
             Assert.IsTrue(fabrica == c1);
             Assert.IsTrue(fabrica == s1);
             Assert.IsTrue(fabrica == m1);
+        }
+        /// <summary>
+        /// Crea tipo Fabrica deposito,Computadora,Servidor y minador
+        /// Los Agrega al deposito y chequea que se hayan agregado correctamente
+        /// </summary>
+        [TestMethod]
+        public void BorrarDepositoFabrica()
+        {
+            //arrange
+            int capacidad = 3;
+            FabricaDeposito<TiposElectronicos> fabrica = new FabricaDeposito<TiposElectronicos>(capacidad);
+            Computadora c1 = new Computadora(new Procesador());
+            Servidor s1 = new Servidor(new List<Procesador>());
+            MineroBitcoin m1 = new MineroBitcoin(new List<Grafica>());
+            //act
+            fabrica += c1;
+            fabrica += s1;
+            fabrica += m1;
+            //assert
+            Assert.IsTrue(fabrica == c1);
+            Assert.IsTrue(fabrica == s1);
+            Assert.IsTrue(fabrica == m1);
+            fabrica -= c1;
+            fabrica -= s1;
+            fabrica -= m1;
+            Assert.IsTrue(fabrica != c1);
+            Assert.IsTrue(fabrica != s1);
+            Assert.IsTrue(fabrica != m1);
         }
         /// <summary>
         /// Crea una clase grafica y comprueba que los parametros sean iguales
