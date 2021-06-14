@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace PruebaUnita
 {
     [TestClass]
-    public class UnitTest1
+    public class TestUnitario
     {
         /// <summary>
         /// Crea tipo Fabrica deposito,Computadora,Servidor y minador
@@ -46,16 +46,12 @@ namespace PruebaUnita
             fabrica += c1;
             fabrica += s1;
             fabrica += m1;
-            //assert
-            Assert.IsTrue(fabrica == c1);
-            Assert.IsTrue(fabrica == s1);
-            Assert.IsTrue(fabrica == m1);
             fabrica -= c1;
             fabrica -= s1;
-            fabrica -= m1;
+            //assert
             Assert.IsTrue(fabrica != c1);
             Assert.IsTrue(fabrica != s1);
-            Assert.IsTrue(fabrica != m1);
+            Assert.IsTrue(fabrica == m1);
         }
         /// <summary>
         /// Crea una clase grafica y comprueba que los parametros sean iguales

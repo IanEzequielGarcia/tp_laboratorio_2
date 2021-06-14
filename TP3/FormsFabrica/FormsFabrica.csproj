@@ -58,11 +58,11 @@
     <Compile Include="AgregarProcesador.Designer.cs">
       <DependentUpon>AgregarProcesador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FORMDEPOSITO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FORMDEPOSITO.Designer.cs">
+      <DependentUpon>FORMDEPOSITO.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMostrar.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,8 @@
     <EmbeddedResource Include="AgregarProcesador.resx">
       <DependentUpon>AgregarProcesador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FORMDEPOSITO.resx">
+      <DependentUpon>FORMDEPOSITO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMostrar.resx">
       <DependentUpon>FormMostrar.cs</DependentUpon>

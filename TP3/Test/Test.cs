@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Entidades;
 namespace Test
 {
-    class Program
+    class Test
     {
         static void Main(string[] args)
         {
