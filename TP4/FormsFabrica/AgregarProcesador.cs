@@ -46,9 +46,13 @@ public AgregarProcesador()
                 int.TryParse(this.txtCores.Text, out this.coresForm);
                 this.modelo = txtModelo.Text;
                 Enum.TryParse(this.comboBoxMarca.SelectedItem.ToString(), out Procesador.MarcaProcesador marcaProcesador);
+                this.marcaProcesador = marcaProcesador;
                 Enum.TryParse(this.comboBoxGeneracion.SelectedItem.ToString(), out Procesador.Generacion generacionProcesador);
+                this.generacionProcesador = generacionProcesador;
                 Enum.TryParse(this.comboGama.SelectedItem.ToString(), out Procesador.GamaProducto gamaProcesador);
+                this.gamaProcesador = gamaProcesador;
                 Enum.TryParse(this.comboTipo.SelectedItem.ToString(), out Procesador.TipoProducto tipoProcesador);
+                this.tipoProcesador = tipoProcesador;
             }
             catch (Exception b)
             {

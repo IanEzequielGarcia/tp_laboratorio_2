@@ -47,7 +47,6 @@ namespace FormsFabrica
             this.label1 = new System.Windows.Forms.Label();
             this.btnCargarSql = new System.Windows.Forms.Button();
             this.dataGridViewAlmacen = new System.Windows.Forms.DataGridView();
-            this.btnAniadirSql = new System.Windows.Forms.Button();
             this.btnBorrarSQL = new System.Windows.Forms.Button();
             this.btnGuardarSQL = new System.Windows.Forms.Button();
             this.dataGridViewProcesador = new System.Windows.Forms.DataGridView();
@@ -211,7 +210,7 @@ namespace FormsFabrica
             // 
             // btnCargarSql
             // 
-            this.btnCargarSql.Location = new System.Drawing.Point(228, 232);
+            this.btnCargarSql.Location = new System.Drawing.Point(403, 232);
             this.btnCargarSql.Name = "btnCargarSql";
             this.btnCargarSql.Size = new System.Drawing.Size(79, 25);
             this.btnCargarSql.TabIndex = 19;
@@ -227,15 +226,6 @@ namespace FormsFabrica
             this.dataGridViewAlmacen.Size = new System.Drawing.Size(176, 201);
             this.dataGridViewAlmacen.TabIndex = 20;
             // 
-            // btnAniadirSql
-            // 
-            this.btnAniadirSql.Location = new System.Drawing.Point(525, 232);
-            this.btnAniadirSql.Name = "btnAniadirSql";
-            this.btnAniadirSql.Size = new System.Drawing.Size(79, 25);
-            this.btnAniadirSql.TabIndex = 21;
-            this.btnAniadirSql.Text = "añadir";
-            this.btnAniadirSql.UseVisualStyleBackColor = true;
-            // 
             // btnBorrarSQL
             // 
             this.btnBorrarSQL.Location = new System.Drawing.Point(619, 232);
@@ -248,7 +238,7 @@ namespace FormsFabrica
             // 
             // btnGuardarSQL
             // 
-            this.btnGuardarSQL.Location = new System.Drawing.Point(313, 232);
+            this.btnGuardarSQL.Location = new System.Drawing.Point(511, 232);
             this.btnGuardarSQL.Name = "btnGuardarSQL";
             this.btnGuardarSQL.Size = new System.Drawing.Size(79, 25);
             this.btnGuardarSQL.TabIndex = 23;
@@ -282,7 +272,6 @@ namespace FormsFabrica
             this.Controls.Add(this.dataGridViewProcesador);
             this.Controls.Add(this.btnGuardarSQL);
             this.Controls.Add(this.btnBorrarSQL);
-            this.Controls.Add(this.btnAniadirSql);
             this.Controls.Add(this.dataGridViewAlmacen);
             this.Controls.Add(this.btnCargarSql);
             this.Controls.Add(this.label1);
@@ -335,7 +324,6 @@ namespace FormsFabrica
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCargarSql;
         private System.Windows.Forms.DataGridView dataGridViewAlmacen;
-        private System.Windows.Forms.Button btnAniadirSql;
         private System.Windows.Forms.Button btnBorrarSQL;
         private System.Windows.Forms.Button btnGuardarSQL;
         private System.Windows.Forms.DataGridView dataGridViewProcesador;

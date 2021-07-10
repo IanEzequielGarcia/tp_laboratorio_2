@@ -41,8 +41,11 @@ namespace FormsFabrica
             int.TryParse(this.txtCores.Text, out this.coresForm);
             this.modelo = txtModelo.Text;
             Enum.TryParse(this.comboBoxMarca.SelectedItem.ToString(), out Grafica.MarcaGrafica marcaGrafica);
+            this.marcaGrafica = marcaGrafica;
             Enum.TryParse(this.comboGama.SelectedItem.ToString(), out Grafica.GamaProducto gamaGrafica);
+            this.gamaGrafica = gamaGrafica;
             Enum.TryParse(this.comboTipo.SelectedItem.ToString(), out Grafica.TipoProducto tipoGrafica);
+            this.tipoGrafica = tipoGrafica;
         }
     }
 }

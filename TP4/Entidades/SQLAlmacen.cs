@@ -154,14 +154,14 @@ namespace Entidades
             try
             {
                 DataRow dataRow = dtGrafica.NewRow();
-                dataRow[1] = grafica.Modelo;
-                dataRow[2] = grafica.Hercio;
-                dataRow[3] = grafica.Cores;
-                dataRow[4] = grafica.Marca.ToString();
-                dataRow[5] = grafica.CosteProduccion;
-                dataRow[6] = grafica.Gama.ToString();
-                dataRow[7] = grafica.Tipo.ToString();
-                dataRow[8] = AlmacenId;
+                dataRow["Modelo"] = grafica.Modelo;
+                dataRow["Hercio"] = grafica.Hercio;
+                dataRow["Cores"] = grafica.Cores;
+                dataRow["MarcaGrafica"] = grafica.Marca.ToString();
+                dataRow["PrecioFabricacion"] = grafica.CosteProduccion;
+                dataRow["Gama"] = grafica.Gama.ToString();
+                dataRow["Tipo"] = grafica.Tipo.ToString();
+                dataRow["AlmacenId"] = AlmacenId;
 
                 dtGrafica.Rows.Add(dataRow);
                 return true;
@@ -182,15 +182,15 @@ namespace Entidades
             try
             {
                 DataRow dataRow = dtProcesador.NewRow();
-                dataRow[1] = procesador.Modelo;
-                dataRow[2] = procesador.Hercio;
-                dataRow[3] = procesador.Cores;
-                dataRow[4] = procesador.MarcaProcesadores.ToString();
-                dataRow[5] = procesador.Gen.ToString();
-                dataRow[6] = procesador.CosteProduccion;
-                dataRow[7] = procesador.Gama.ToString();
-                dataRow[8] = procesador.Tipo.ToString();
-                dataRow[9] = AlmacenId;
+                dataRow["Modelo"] = procesador.Modelo;
+                dataRow["Hercio"] = procesador.Hercio;
+                dataRow["Cores"] = procesador.Cores;
+                dataRow["MarcaProcesadores"] = procesador.MarcaProcesadores.ToString();
+                dataRow["Generacion"] = procesador.Gen.ToString();
+                dataRow["PrecioFabricacion"] = procesador.CosteProduccion;
+                dataRow["Gama"] = procesador.Gama.ToString();
+                dataRow["Tipo"] = procesador.Tipo.ToString();
+                dataRow["AlmacenId"] = AlmacenId;
 
                 dtProcesador.Rows.Add(dataRow);
                 return true;
@@ -261,7 +261,6 @@ namespace Entidades
                 this.daAlmacen.UpdateCommand.Parameters.Add("@id", SqlDbType.Int, 50, "id");
                 this.daAlmacen.UpdateCommand.Parameters.Add("@tipo", SqlDbType.VarChar, 50, "tipo");
                 this.daAlmacen.DeleteCommand.Parameters.Add("@id", SqlDbType.Int, 50, "id");
-
             }
             catch (Exception e)
             {
@@ -281,7 +280,7 @@ namespace Entidades
                 this.daGrafica.SelectCommand = new SqlCommand("SELECT id,Modelo,Hercio,Cores,MarcaGrafica,PrecioFabricacion,Gama,Tipo,AlmacenId FROM Grafica", this.cn);
                 this.daGrafica.InsertCommand = new SqlCommand("INSERT INTO Grafica (Modelo,Hercio,Cores,MarcaGrafica,PrecioFabricacion,Gama,Tipo,AlmacenId) " +
                     "VALUES (@Modelo,@Hercio,@Cores,@MarcaGrafica,@PrecioFabricacion,@Gama,@Tipo,@AlmacenId)", this.cn);
-                this.daGrafica.UpdateCommand = new SqlCommand("UPDATE Grafica SET Modelo=@Modelo,Cores=@Cores,MarcaGrafica=@MarcaGrafica," +
+                this.daGrafica.UpdateCommand = new SqlCommand("UPDATE Grafica SET Modelo=@Modelo,Hercio=@Hercio,Cores=@Cores,MarcaGrafica=@MarcaGrafica," +
                     "PrecioFabricacion=@PrecioFabricacion,Gama=@Gama,Tipo=@Tipo,AlmacenId=@Almacenid WHERE id=@id", this.cn);
                 this.daGrafica.DeleteCommand = new SqlCommand("DELETE FROM Grafica WHERE id=@id", this.cn);
 

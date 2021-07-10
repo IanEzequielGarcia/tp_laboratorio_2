@@ -26,9 +26,6 @@ namespace FormsFabrica
             sqlAlmacen = new SQLAlmacen();
             InitializeComponent();
 
-            //sqlAlmacen.ConfigurarDataAdapterAlmacen();
-            //sqlAlmacen.ConfigurarDataTables();
-
             this.dataGridViewAlmacen.MultiSelect = false;
             this.dataGridViewAlmacen.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewAlmacen.AllowUserToAddRows = false;
@@ -187,7 +184,6 @@ namespace FormsFabrica
             {
                 try
                 {
-                    //this.miFabrica += servidorAux;
                     sqlAlmacen.CargarMineroADataTable(servidorAux);
                     ActualizarGrillas();
                 }
@@ -201,25 +197,12 @@ namespace FormsFabrica
                 MessageBox.Show("Reingrese los datos");
             }
         }
-
         private void btnGuardarTxt_Click(object sender, EventArgs e)
         {
             try
             {
-                GuardarYSerializar.GuardarTexto("FabricaDeposito.txt", miFabrica);
-            }
-            catch (Exception b)
-            {
-                MessageBox.Show(b.Message);
-            }
-        }
-
-        private void btnSerializar_Click(object sender, EventArgs e)
-        {
-            try
-            {
                 this.SqlAMemoria();
-                GuardarYSerializar.SerializarXML($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/FabricaDepositoXML.xml", miFabrica);
+                GuardarYSerializar.GuardarTexto($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/FabricaDepositoText.txt", miFabrica);
             }
             catch (Exception b)
             {
@@ -231,8 +214,20 @@ namespace FormsFabrica
             try
             {
                 FormMostrar formMostrar = new FormMostrar();
-                formMostrar.TextBoxMostrar = GuardarYSerializar.LeerTexto("FabricaDeposito.txt");
+                formMostrar.TextBoxMostrar = GuardarYSerializar.LeerTexto($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/FabricaDepositoText.txt");
                 formMostrar.Show();
+            }
+            catch (Exception b)
+            {
+                MessageBox.Show(b.Message);
+            }
+        }
+        private void btnSerializar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.SqlAMemoria();
+                GuardarYSerializar.SerializarXML($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/FabricaDepositoXML.xml", miFabrica);
             }
             catch (Exception b)
             {
@@ -266,6 +261,7 @@ namespace FormsFabrica
         {
             try
             {
+                SqlAMemoria();
                 FormMostrar formMostrar = new FormMostrar(miFabrica);
                 formMostrar.Show();
             }
@@ -337,6 +333,7 @@ namespace FormsFabrica
         {
             foreach(DataRow dataRow in sqlAlmacen.dtAlmacen.Rows)
             {
+                miFabrica = new FabricaDeposito<TiposElectronicos>(100);
                 try
                 {
                     if ((string)dataRow[1] == "Computadora")
