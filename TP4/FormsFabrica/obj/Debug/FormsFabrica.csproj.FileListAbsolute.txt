@@ -1,0 +1,17 @@
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\bin\Debug\FormsFabrica.exe.config
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\bin\Debug\FormsFabrica.exe
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\bin\Debug\FormsFabrica.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\bin\Debug\Entidades.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\bin\Debug\Entidades.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.csprojAssemblyReference.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.AgregarGrafica.resources
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.AgregarProcesador.resources
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.FormFabrica.resources
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.Properties.Resources.resources
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.csproj.GenerateResource.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.csproj.CoreCompileInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.csproj.CopyComplete
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.exe
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\obj\Debug\FormsFabrica.FormMostrar.resources
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\FormsFabrica\bin\Debug\Entidades.dll.config
