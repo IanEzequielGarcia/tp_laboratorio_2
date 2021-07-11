@@ -21,4 +21,11 @@ namespace Entidades
         {
         }
     }
+    public static class ExcepcionYaEnAlmacen
+    {
+        public static string YaEnAlmacen(this Excepciones excepciones)
+        {
+            return "Ya se encuentra en el Almacen ";
+        }
+    }
 }

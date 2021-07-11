@@ -42,24 +42,51 @@ namespace Test
             Console.WriteLine(s1.ToString());
 
             Console.Write(f1.ToString());
-            //Console.Write(f2.ToString());
-            //Console.Write(f3.ToString());
-            //f1 -= c1;
-            //f1 -= c2;
-            //f1 += m1;
-            //f1 += s1;
 
             Console.Write(f1.ToString());
             
-            GuardarYSerializar.GuardarTexto("Archivo.txt", f1);
+            GuardarYSerializar.GuardarTexto($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/Archivo.txt", f1);
             Console.WriteLine("\n\nArchivo Leido de texto\n\n");
-            Console.WriteLine(GuardarYSerializar.LeerTexto("Archivo.txt"));
+            Console.WriteLine(GuardarYSerializar.LeerTexto($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/Archivo.txt"));
 
-            GuardarYSerializar.SerializarXML("Archivo.xml",f1);
+            GuardarYSerializar.SerializarXML($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/Archivo.xml",f1);
             Console.WriteLine("\n\nArchivo Leido de XML\n\n");
-            f1=GuardarYSerializar.DeSerializarXML<TiposElectronicos>("Archivo.xml");
+            f1=GuardarYSerializar.DeSerializarXML<TiposElectronicos>($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/Archivo.xml");
 
             Console.Write(f1.ToString());
+
+            /*---------------TP4---------------------------------*/
+            /*---------------TP4---------------------------------*/
+
+
+            //Hago saltar una excepcion
+            try
+            {
+                f1 += c1;
+            } catch (Excepciones s)
+            {
+                Console.WriteLine($"EXCEPCION LANZADA ... {s.YaEnAlmacen()}");
+            }
+            SQLAlmacen sQLAlmacen = new SQLAlmacen();
+            Computadora computadora1 = new Computadora(p1, g1);
+            Servidor servidor1 = new Servidor(new List<Procesador>());
+            MineroBitcoin minero1 = new MineroBitcoin(new List<Grafica>());
+
+            FabricaDeposito<TiposElectronicos> deposito1 = new FabricaDeposito<TiposElectronicos>(3);
+
+            deposito1.Agregar(computadora1);
+            deposito1.Agregar(servidor1);
+            deposito1.Agregar(minero1);
+
+            sQLAlmacen.CargarAlmacenADataTable<TiposElectronicos>(deposito1);
+
+            sQLAlmacen.CargarProcesador(p1, 1);
+            sQLAlmacen.CargarGrafica(g1, 2);
+            //SON 0 LOS TRES PORQUE CUANDO BORRO A UNO, LE RESTA UN NUMERO AL ID...
+            sQLAlmacen.BorrarSQl(0);
+            sQLAlmacen.BorrarSQl(0);
+            sQLAlmacen.BorrarSQl(0);
+
             Console.ReadKey();
         }
     }

@@ -47,11 +47,11 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestUnitario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestUnitarioDos.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

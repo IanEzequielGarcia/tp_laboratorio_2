@@ -36,6 +36,19 @@ namespace Entidades
         {
             this.precioTotal = this.procesador.CosteProduccion + this.grafica.CosteProduccion;
         }
+        public static bool operator ==(Computadora c1, Computadora c2)
+        {
+            bool aux = false;
+                if (!ReferenceEquals(c1, null)&& !ReferenceEquals(c2, null))
+                {
+                    aux = (c1.ElProcesador == c2.ElProcesador && c1.Lagrafica==c2.Lagrafica);
+                }
+            return aux;
+        }
+        public static bool operator !=(Computadora c1, Computadora c2)
+        {
+            return !(c1 == c2);
+        }
         public override string ToString()
         {
             try

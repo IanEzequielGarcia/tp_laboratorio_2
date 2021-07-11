@@ -8,3 +8,14 @@ C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIME
 C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Test\obj\Debug\Test.csproj.CopyComplete
 C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Test\obj\Debug\Test.exe
 C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP3\Test\obj\Debug\Test.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\bin\Debug\Test.exe.config
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\bin\Debug\Test.exe
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\bin\Debug\Test.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\bin\Debug\Entidades.dll
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\bin\Debug\Entidades.pdb
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\bin\Debug\Entidades.dll.config
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\obj\Debug\Test.exe
+C:\Users\Ianch\OneDrive\Escritorio\ESCUELA\Programacion o escuela\PRIMERCUATRIMESTRE2021\tp_laboratorio_2\TP4\Test\obj\Debug\Test.pdb

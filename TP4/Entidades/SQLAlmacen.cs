@@ -37,10 +37,17 @@ namespace Entidades
         /// <param name="e"></param>
         public void InicializarTodo(object sender, EventArgs e)
         {
-            this.ConfigurarDataTables();
-            this.ConfigurarDataAdapterAlmacen();
-            this.ConfigurarDataAdapterGrafica();
-            this.ConfigurarDataAdapterProcesador();
+            try
+            {
+                this.ConfigurarDataTables();
+                this.ConfigurarDataAdapterAlmacen();
+                this.ConfigurarDataAdapterGrafica();
+                this.ConfigurarDataAdapterProcesador();
+            }
+            catch (Exception s)
+            {
+                throw new Excepciones(s.Message);
+            }
         }
         public void CargarAlmacenADataTable<T>(FabricaDeposito<TiposElectronicos> fabricaDeposito)
         {
@@ -434,7 +441,6 @@ namespace Entidades
             {
                 throw new Excepciones(s.Message);
             }
-
         }
     }
 }

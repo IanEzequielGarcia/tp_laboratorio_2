@@ -57,14 +57,21 @@ namespace Entidades
         /// <returns></returns>
         static public FabricaDeposito<T> operator +(FabricaDeposito<T> d, FabricaDeposito<T> d2)
         {
-            foreach(TiposElectronicos electronicos in d.Lista)
+            try
             {
-                if(!ReferenceEquals(electronicos,null)&& d2 != electronicos)
+                foreach (TiposElectronicos electronicos in d.Lista)
                 {
-                    d += electronicos;
+                    if (!ReferenceEquals(electronicos, null) && d2 != electronicos)
+                    {
+                        d += electronicos;
+                    }
                 }
+                return d;
             }
-            return d;
+            catch (Exception e)
+            {
+                throw new Excepciones(e.Message);
+            }
         }
         /// <summary>
         /// Agrega el tipo electronico a la fabrica this
@@ -81,10 +88,10 @@ namespace Entidades
                     return true;
                 }
                 else {
-                    new Excepciones("Ya se encuentra en el deposito");
+                    throw new Excepciones("Ya se encuentra en el deposito");
                 }
             }else{
-                new Excepciones("El deposito esta lleno");
+                throw new Excepciones("El deposito esta lleno");
             }
             return false;
         }
@@ -153,8 +160,14 @@ namespace Entidades
             bool aux = false;
             foreach(TiposElectronicos auxTiposElectronicos in f1.lista)
             {
-                if (!ReferenceEquals(auxTiposElectronicos, null) && auxTiposElectronicos == t1)
-                    aux = true;
+                if (!ReferenceEquals(auxTiposElectronicos, null))
+                {
+                    if((string.Compare(auxTiposElectronicos.ToString(),t1.ToString()))==0)
+                    {
+                        aux = true;
+                        break;
+                    }
+                }
             }
             return aux;
         }

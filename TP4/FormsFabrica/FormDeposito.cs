@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using Entidades;
 using System.Data.SqlClient;
+using System.Threading;
 namespace FormsFabrica
 {
     public partial class FormFabrica : Form
@@ -46,6 +47,7 @@ namespace FormsFabrica
             Procesador procesadorAux=null;
             Grafica graficaAux = null;
             Computadora computadoraAux=null;
+
             formProcesador.ShowDialog();
             if(formProcesador.DialogResult==DialogResult.OK)
             {
@@ -54,6 +56,14 @@ namespace FormsFabrica
                     procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
                         formProcesador.MarcaProcesador, formProcesador.GeneracionProcesador, formProcesador.PrecioForm,
                         formProcesador.GamaProcesador, formProcesador.TipoProcesador);
+                    while(!Procesador.Validar(procesadorAux))
+                    {
+                        MessageBox.Show("Reingrese los datos");
+                        formProcesador.ShowDialog();
+                        procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
+                        formProcesador.MarcaProcesador, formProcesador.GeneracionProcesador, formProcesador.PrecioForm,
+                        formProcesador.GamaProcesador, formProcesador.TipoProcesador);
+                    }
                 }
                 catch(Exception b)
                 {
@@ -72,8 +82,16 @@ namespace FormsFabrica
                         graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
                              formGrafica.MarcaGrafica, formGrafica.PrecioForm,
                              formGrafica.GamaGrafica, formGrafica.TipoGrafica);
-                        computadoraAux = new Computadora(procesadorAux, graficaAux);
                     }
+                    while(!Grafica.Validar(graficaAux))
+                    {
+                        MessageBox.Show("Reingrese los datos");
+                        formGrafica.ShowDialog();
+                        graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
+                             formGrafica.MarcaGrafica, formGrafica.PrecioForm,
+                             formGrafica.GamaGrafica, formGrafica.TipoGrafica);
+                    }
+                    computadoraAux = new Computadora(procesadorAux, graficaAux);
                 }
                 catch (Exception b)
                 {
@@ -82,22 +100,14 @@ namespace FormsFabrica
             }
             else { computadoraAux = new Computadora(procesadorAux); }
 
-            if ( Procesador.Validar(computadoraAux.ElProcesador) && Grafica.Validar(computadoraAux.Lagrafica) )
+            try
             {
-                try
-                {
-                    //this.miFabrica += computadoraAux;
-                    sqlAlmacen.CargarComputadoraADataTable(computadoraAux);
-                    ActualizarGrillas();
-                }
-                catch (Exception s)
-                {
-                    MessageBox.Show(s.Message);
-                }
+                sqlAlmacen.CargarComputadoraADataTable(computadoraAux);
+                ActualizarGrillas();
             }
-            else
+            catch (Exception s)
             {
-                MessageBox.Show("Reingrese los datos");
+                MessageBox.Show(s.Message);
             }
         }
 
@@ -136,7 +146,6 @@ namespace FormsFabrica
             {
                 try
                 {
-                    //this.miFabrica += servidorAux;
                     sqlAlmacen.CargarServidorADataTable(servidorAux);
                     ActualizarGrillas();
                 }
@@ -261,8 +270,11 @@ namespace FormsFabrica
         {
             try
             {
-                SqlAMemoria();
+                Thread t = new Thread(SqlAMemoria);
+                t.Start();
+                Thread.Sleep(50);
                 FormMostrar formMostrar = new FormMostrar(miFabrica);
+
                 formMostrar.Show();
             }
             catch (Exception b)
@@ -382,13 +394,13 @@ namespace FormsFabrica
                         {
                             if ((int)dataRowProcesadores["AlmacenId"] == (int)dataRow["id"])
                             {
-                                Enum.TryParse(dataRowProcesadores[3].ToString(), out Procesador.MarcaProcesador marca);
-                                Enum.TryParse(dataRowProcesadores[4].ToString(), out Procesador.Generacion generacion);
-                                Enum.TryParse(dataRowProcesadores[6].ToString(), out Procesador.GamaProducto gama);
-                                Enum.TryParse(dataRowProcesadores[7].ToString(), out Procesador.TipoProducto tipo);
-                                Int32.TryParse(dataRowProcesadores[2].ToString(), out int cores);
-                                float.TryParse(dataRowProcesadores[5].ToString(), out float hercios);
-                                Procesador procesador = new Procesador(dataRowProcesadores[1].ToString(), cores, marca, generacion, hercios, gama, tipo);
+                                Int32.TryParse(dataRowProcesadores[3].ToString(), out int cores);
+                                Enum.TryParse(dataRowProcesadores[4].ToString(), out Procesador.MarcaProcesador marca);
+                                Enum.TryParse(dataRowProcesadores[5].ToString(), out Procesador.Generacion generacion);
+                                float.TryParse(dataRowProcesadores[6].ToString(), out float precio);
+                                Enum.TryParse(dataRowProcesadores[7].ToString(), out Procesador.GamaProducto gama);
+                                Enum.TryParse(dataRowProcesadores[8].ToString(), out Procesador.TipoProducto tipo);
+                                Procesador procesador = new Procesador(dataRowProcesadores[1].ToString(), cores, marca, generacion, precio, gama, tipo);
                                 lista.Add(procesador);
                             }
                         }
