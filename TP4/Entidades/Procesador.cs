@@ -102,8 +102,8 @@ namespace Entidades
         public static bool Validar(Procesador p)
         {
             return !( ReferenceEquals(p,null) || p.Modelo=="Sin Procesador" || string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Hercio, null)|| p.Hercio==0
-                   || ReferenceEquals(p.MarcaProcesadores, null)|| ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) 
-                   || ReferenceEquals(p.Gen, null) || ReferenceEquals(p.Cores, null) || p.Cores==0
+                   || ReferenceEquals(p.MarcaProcesadores, null) || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null)||ReferenceEquals(p.CosteProduccion,null)
+                   || p.CosteProduccion==0 || ReferenceEquals(p.Gen, null) || ReferenceEquals(p.Cores, null) || p.Cores==0
                    );
         }
         #endregion

@@ -67,24 +67,4 @@ namespace Entidades
         }
         #endregion
     }
-    #region Metodo de Extension
-    public static class ComputadoraExtendida
-    {
-        /// <summary>
-        /// Chequea que tenga 3 cores o mas y que tenga 4 hercios o mas
-        /// </summary>
-        /// <param name="computadora"></param>
-        /// <returns> true ó false </returns>
-        public static bool EsVeloz(this Computadora computadora)
-        {
-            bool retornado = false;
-            if(Procesador.Validar(computadora.ElProcesador) && Grafica.Validar(computadora.Lagrafica))
-            {
-                if (computadora.ElProcesador.Cores >= 3 && computadora.ElProcesador.Hercio >= 4)
-                    retornado = true;
-            }
-            return retornado;
-        }
-    }
-    #endregion
 }

@@ -102,8 +102,16 @@ namespace FormsFabrica
 
             try
             {
-                sqlAlmacen.CargarComputadoraADataTable(computadoraAux);
-                ActualizarGrillas();
+                if(computadoraAux.ElProcesador.Modelo != "Sin Procesador")
+                {
+                    sqlAlmacen.CargarComputadoraADataTable(computadoraAux);
+                    ActualizarGrillas();
+                }
+                else
+                {
+                    MessageBox.Show("Nada que agregar...");
+                }
+
             }
             catch (Exception s)
             {
@@ -125,13 +133,15 @@ namespace FormsFabrica
                     formProcesador.ShowDialog();
                     if (formProcesador.DialogResult == DialogResult.OK)
                     {
-                        procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
+                        while(!Procesador.Validar(procesadorAux))
+                        {
+                            MessageBox.Show("Reingrese los datos");
+                            formProcesador.ShowDialog();
+                            procesadorAux = new Procesador(formProcesador.Modelo, formProcesador.CoresForm,
                             formProcesador.MarcaProcesador, formProcesador.GeneracionProcesador, formProcesador.PrecioForm,
                             formProcesador.GamaProcesador, formProcesador.TipoProcesador);
-                        if(Procesador.Validar(procesadorAux))
-                        {
-                            listaAux.Add(procesadorAux);
                         }
+                        listaAux.Add(procesadorAux);
                     }
                     respuesta = MessageBox.Show("Instalar otro procesador??", "Elija", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 }
@@ -156,7 +166,7 @@ namespace FormsFabrica
             }
             else
             {
-                MessageBox.Show("Reingrese los datos");
+                MessageBox.Show("Nada que agregar...");
             }
         }
         private void btnCrearMinero_Click(object sender, EventArgs e)
@@ -173,14 +183,21 @@ namespace FormsFabrica
                     formGrafica.ShowDialog();
                     if (formGrafica.DialogResult == DialogResult.OK)
                     {
+
                         graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
                             formGrafica.MarcaGrafica, formGrafica.PrecioForm,
                             formGrafica.GamaGrafica, formGrafica.TipoGrafica);
-                        if(Grafica.Validar(graficaAux))
-                        { listaAux.Add(graficaAux); }
+                        while(!Grafica.Validar(graficaAux))
+                        {
+                            MessageBox.Show("Reingrese los datos");
+                            formGrafica.ShowDialog();
+                            graficaAux = new Grafica(formGrafica.Modelo, formGrafica.CoresForm,
+                                 formGrafica.MarcaGrafica, formGrafica.PrecioForm,
+                                 formGrafica.GamaGrafica, formGrafica.TipoGrafica);
+                        }
+                        listaAux.Add(graficaAux);
                     }
                     respuesta = MessageBox.Show("Instalar otra grafica??", "Elija", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
                 }
                 catch (Exception b)
                 {
@@ -203,7 +220,7 @@ namespace FormsFabrica
             }
             else
             {
-                MessageBox.Show("Reingrese los datos");
+                MessageBox.Show("Nada que agregar...");
             }
         }
         private void btnGuardarTxt_Click(object sender, EventArgs e)

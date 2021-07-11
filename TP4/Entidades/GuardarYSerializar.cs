@@ -11,6 +11,7 @@ namespace Entidades
 {
     public class GuardarYSerializar
     {
+        #region Guardar y Leer Texto 
         /// <summary>
         /// Guarda el objeto en modo txt en el path indicado
         /// </summary>
@@ -51,6 +52,9 @@ namespace Entidades
             }
             return aux;
         }
+        #endregion
+
+        #region Serializar y Deserializar XML 
         /// <summary>
         /// Serializa a XML el objeto ingresado y lo guarda en el path
         /// </summary>
@@ -93,6 +97,7 @@ namespace Entidades
             }
             return aux;
         }
+        #endregion
     }
 }
 

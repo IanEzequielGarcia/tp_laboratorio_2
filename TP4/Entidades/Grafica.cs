@@ -78,9 +78,10 @@ namespace Entidades
         /// <returns></returns>
         public static bool Validar(Grafica p)
         {
-            return (p.Modelo == "Sin grafica") || !( (ReferenceEquals(p, null)) 
+            return (p.Modelo == "Sin grafica") || !( ReferenceEquals(p, null) || ReferenceEquals(p.CosteProduccion, null) 
+                   || p.CosteProduccion==0 || ReferenceEquals(p.Hercio,null) || p.Hercio==0
                    || (string.IsNullOrWhiteSpace(p.Modelo) || ReferenceEquals(p.Marca, null)
-                   || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) || ReferenceEquals(p.Cores, null)) 
+                   || ReferenceEquals(p.Tipo, null) || ReferenceEquals(p.Gama, null) || ReferenceEquals(p.Cores, null)) || p.Cores==0
                    );
         }
         #endregion

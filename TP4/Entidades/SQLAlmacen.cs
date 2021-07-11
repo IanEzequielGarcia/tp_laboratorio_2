@@ -10,6 +10,7 @@ namespace Entidades
     public delegate void Delegado(object sender, EventArgs e);
     public class SQLAlmacen
     {
+        #region Atributos 
         public event Delegado EventoDelegado;
 
         public SqlConnection cn;
@@ -21,6 +22,9 @@ namespace Entidades
         public DataTable dtAlmacen;
         public DataTable dtProcesador;
         public DataTable dtGrafica;
+        #endregion
+        
+        #region Constructor 
         public SQLAlmacen()
         {
             this.EventoDelegado += new Delegado(this.InicializarTodo);
@@ -30,25 +34,9 @@ namespace Entidades
                 this.EventoDelegado(null, EventArgs.Empty);
             }
         }
-        /// <summary>
-        /// Inicializa el DataTable y DataAdapter
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void InicializarTodo(object sender, EventArgs e)
-        {
-            try
-            {
-                this.ConfigurarDataTables();
-                this.ConfigurarDataAdapterAlmacen();
-                this.ConfigurarDataAdapterGrafica();
-                this.ConfigurarDataAdapterProcesador();
-            }
-            catch (Exception s)
-            {
-                throw new Excepciones(s.Message);
-            }
-        }
+        #endregion
+
+        #region Metodos Cargar a DataTable 
         public void CargarAlmacenADataTable<T>(FabricaDeposito<TiposElectronicos> fabricaDeposito)
         {
             foreach(TiposElectronicos tiposElectronicos in fabricaDeposito.Lista)
@@ -150,6 +138,9 @@ namespace Entidades
                 throw new Excepciones(e.Message);
             }
         }
+        #endregion
+
+        #region Cargar Grafica y Procesador 
         /// <summary>
         /// Carga la grafica ingresada al Datatable
         /// </summary>
@@ -205,6 +196,28 @@ namespace Entidades
             catch(Exception)
             {
                 return false;
+            }
+        }
+        #endregion
+
+        #region Inicializar y Configurar
+        /// <summary>
+        /// Configura e inicializa los Datatables y Adapters
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void InicializarTodo(object sender, EventArgs e)
+        {
+            try
+            {
+                this.ConfigurarDataTables();
+                this.ConfigurarDataAdapterAlmacen();
+                this.ConfigurarDataAdapterGrafica();
+                this.ConfigurarDataAdapterProcesador();
+            }
+            catch (Exception s)
+            {
+                throw new Excepciones(s.Message);
             }
         }
         /// <summary>
@@ -363,6 +376,9 @@ namespace Entidades
                 throw new Excepciones(e.Message);
             }
         }
+        #endregion
+
+        #region Cargar Guardar y Borrar SQL 
         /// <summary>
         /// Carga los datos del SQL al datagriview y lo actualiza
         /// </summary>
@@ -442,5 +458,6 @@ namespace Entidades
                 throw new Excepciones(s.Message);
             }
         }
+        #endregion
     }
 }
