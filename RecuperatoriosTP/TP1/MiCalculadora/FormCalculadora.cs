@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Entidades;
 namespace MiCalculadora
 {
     public partial class FormCalculadora : Form
     {
-
+        private Calculadora calculadora;
         #region FormClosing Load e Initalize
         /// <summary>
         /// Llama al metodo limpiar cuando se carga la aplicacion
@@ -22,6 +23,7 @@ namespace MiCalculadora
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
             this.Limpiar();
+            calculadora = new Calculadora();
         }
         /// <summary>
         /// Pregunta si esta seguro de salir cuando intenta cerrar la aplicacion
@@ -43,9 +45,10 @@ namespace MiCalculadora
         #endregion
 
         #region MetodosFormCalculadora
-        static double Operar(Entidades.Numero elN1, Entidades.Numero elN2, string elOperador)
+        double Operar(Numero elN1, Numero elN2, string elOperador)
         {
-            return Entidades.Calculadora.Operador(elN1, elN2, elOperador);
+            char.TryParse(elOperador,out char aux);
+            return calculadora.Operador(elN1, elN2, aux);
         }
         /// <summary>
         /// "Limpia" Los campos de texto del form
@@ -67,9 +70,9 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void BtnOperar_Click(object sender, EventArgs e)
         {
-            Entidades.Numero numeroUno = new Entidades.Numero(this.txtNumero1.Text);
-            Entidades.Numero numeroDos = new Entidades.Numero(this.txtNumero2.Text);
-            this.labelResultado.Text = (FormCalculadora.Operar(numeroUno, numeroDos, this.comboBox2.Text)).ToString();
+            Numero numeroUno = new Numero(this.txtNumero1.Text);
+            Numero numeroDos = new Numero(this.txtNumero2.Text);
+            this.labelResultado.Text = (this.Operar(numeroUno, numeroDos, this.comboBox2.Text)).ToString();
         }
         /// <summary>
         /// Llama a la funcion Limpiar
@@ -99,7 +102,7 @@ namespace MiCalculadora
         private void BtnDecABin_Click(object sender, EventArgs e)
         {
             string num = this.labelResultado.Text;
-            Entidades.Numero aux = new Entidades.Numero(num);
+            Numero aux = new Numero(num);
             if (num == "Valor inválido" || String.IsNullOrWhiteSpace(num))
                 this.labelResultado.Text = "Valor inválido";
             else
@@ -113,7 +116,7 @@ namespace MiCalculadora
         private void BtnBinADec_Click(object sender, EventArgs e)
         {
             string num = this.labelResultado.Text;
-            Entidades.Numero aux = new Entidades.Numero(num);
+            Numero aux = new Numero(num);
             if (String.IsNullOrWhiteSpace(num))
                 this.labelResultado.Text = "Valor inválido";
             else

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public static class Calculadora
+    public class Calculadora
     {
         #region Calculador y Validacion
         /// <summary>
@@ -16,18 +16,15 @@ namespace Entidades
         /// <param name="n2">el segundo numero</param>
         /// <param name="operador">el operador ingresado</param>
         /// <returns>el resultado de la operacion aritmetica</returns>
-        public static double Operador(Numero n1, Numero n2, string operador)
+        public double Operador(Numero n1, Numero n2, char operador)
         {
-
-            if (!String.IsNullOrWhiteSpace(operador))
-                operador = ValidarOperador(operador.Trim()[0]);
             switch (operador)
             {
-                case "/":
+                case '/':
                     return n1 / n2;
-                case "*":
+                case '*':
                     return n1 * n2;
-                case "-":
+                case '-':
                     return n1 - n2;
                 default:
                     return n1 + n2;

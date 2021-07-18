@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Almacen>
+    <id>1</id>
+    <tipo>Computadora</tipo>
+  </Almacen>
+  <Procesador>
+    <id>1</id>
+    <Modelo>China500</Modelo>
+    <Cores>4</Cores>
+    <Gama>Alta</Gama>
+    <Tipo>Industrial</Tipo>
+    <AlmacenId>1</AlmacenId>
+    <Hercios>5</Hercios>
+    <MarcaProcesador>Intel</MarcaProcesador>
+    <Generacion>I3</Generacion>
+    <PrecioFabricacion>1500</PrecioFabricacion>
+  </Procesador>
+  <Grafica>
+    <id>1</id>
+    <Modelo>Sin Grafica</Modelo>
+    <Cores>0</Cores>
+    <MarcaGrafica>Blanca</MarcaGrafica>
+    <Gama>Baja</Gama>
+    <Tipo>Otro</Tipo>
+    <AlmacenId>1</AlmacenId>
+    <Hercios>0</Hercios>
+    <PrecioFabricacion>0</PrecioFabricacion>
+  </Grafica>
+</NewDataSet>

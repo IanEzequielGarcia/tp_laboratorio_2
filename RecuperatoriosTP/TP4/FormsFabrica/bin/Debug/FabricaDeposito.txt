@@ -1,0 +1,5 @@
+﻿Deposito-------------------
+CantidadMaxima: 100
+En el Almacen:
+
+

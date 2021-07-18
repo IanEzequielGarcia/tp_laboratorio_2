@@ -64,9 +64,11 @@ namespace Entidades
         /// <returns>si es valido devuelve el numero convertido a binario y si no lo es devuelve "Valor invalido"</returns>
         public string DecimalBinario(double elNumero)
         {
-            Int64 aux2 = Convert.ToInt64(elNumero);
-            if (aux2 >= 0)
+            if (elNumero >= 0 && elNumero < 2147483647)
+            {
+                Int64.TryParse(elNumero.ToString(), out Int64 aux2);
                 return Convert.ToString(aux2, 2);
+            }
             return "Valor inválido";
         }
         /// <summary>

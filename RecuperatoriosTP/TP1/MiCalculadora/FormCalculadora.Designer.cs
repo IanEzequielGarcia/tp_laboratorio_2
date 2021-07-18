@@ -43,26 +43,26 @@ namespace MiCalculadora
             // txtNumero1
             // 
             this.txtNumero1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.txtNumero1.Location = new System.Drawing.Point(50, 102);
+            this.txtNumero1.Location = new System.Drawing.Point(43, 88);
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(100, 23);
+            this.txtNumero1.Size = new System.Drawing.Size(86, 20);
             this.txtNumero1.TabIndex = 0;
             // 
             // txtNumero2
             // 
             this.txtNumero2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.txtNumero2.Location = new System.Drawing.Point(395, 102);
+            this.txtNumero2.Location = new System.Drawing.Point(339, 88);
             this.txtNumero2.Name = "txtNumero2";
-            this.txtNumero2.Size = new System.Drawing.Size(101, 23);
+            this.txtNumero2.Size = new System.Drawing.Size(87, 20);
             this.txtNumero2.TabIndex = 2;
             // 
             // labelResultado
             // 
             this.labelResultado.AutoSize = true;
             this.labelResultado.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.labelResultado.Location = new System.Drawing.Point(498, 75);
+            this.labelResultado.Location = new System.Drawing.Point(400, 50);
             this.labelResultado.Name = "labelResultado";
-            this.labelResultado.Size = new System.Drawing.Size(0, 15);
+            this.labelResultado.Size = new System.Drawing.Size(0, 13);
             this.labelResultado.TabIndex = 2;
             // 
             // comboBox2
@@ -74,16 +74,16 @@ namespace MiCalculadora
             "+",
             "-",
             "*"});
-            this.comboBox2.Location = new System.Drawing.Point(220, 102);
+            this.comboBox2.Location = new System.Drawing.Point(189, 88);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 23);
+            this.comboBox2.Size = new System.Drawing.Size(104, 21);
             this.comboBox2.TabIndex = 1;
             // 
             // BtnOperar
             // 
-            this.BtnOperar.Location = new System.Drawing.Point(44, 163);
+            this.BtnOperar.Location = new System.Drawing.Point(38, 141);
             this.BtnOperar.Name = "BtnOperar";
-            this.BtnOperar.Size = new System.Drawing.Size(114, 31);
+            this.BtnOperar.Size = new System.Drawing.Size(98, 27);
             this.BtnOperar.TabIndex = 3;
             this.BtnOperar.Text = "Operar";
             this.BtnOperar.UseVisualStyleBackColor = true;
@@ -91,9 +91,9 @@ namespace MiCalculadora
             // 
             // BtnLimpiar
             // 
-            this.BtnLimpiar.Location = new System.Drawing.Point(221, 163);
+            this.BtnLimpiar.Location = new System.Drawing.Point(189, 141);
             this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(114, 31);
+            this.BtnLimpiar.Size = new System.Drawing.Size(98, 27);
             this.BtnLimpiar.TabIndex = 4;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@ namespace MiCalculadora
             // 
             // BtnCerrar
             // 
-            this.BtnCerrar.Location = new System.Drawing.Point(383, 163);
+            this.BtnCerrar.Location = new System.Drawing.Point(328, 141);
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(114, 31);
+            this.BtnCerrar.Size = new System.Drawing.Size(98, 27);
             this.BtnCerrar.TabIndex = 5;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.UseVisualStyleBackColor = true;
@@ -111,9 +111,9 @@ namespace MiCalculadora
             // 
             // BtnDecABin
             // 
-            this.BtnDecABin.Location = new System.Drawing.Point(45, 222);
+            this.BtnDecABin.Location = new System.Drawing.Point(39, 192);
             this.BtnDecABin.Name = "BtnDecABin";
-            this.BtnDecABin.Size = new System.Drawing.Size(227, 31);
+            this.BtnDecABin.Size = new System.Drawing.Size(195, 27);
             this.BtnDecABin.TabIndex = 6;
             this.BtnDecABin.Text = "Convertir a BIN";
             this.BtnDecABin.UseVisualStyleBackColor = true;
@@ -121,9 +121,9 @@ namespace MiCalculadora
             // 
             // BtnBinADec
             // 
-            this.BtnBinADec.Location = new System.Drawing.Point(271, 222);
+            this.BtnBinADec.Location = new System.Drawing.Point(232, 192);
             this.BtnBinADec.Name = "BtnBinADec";
-            this.BtnBinADec.Size = new System.Drawing.Size(227, 31);
+            this.BtnBinADec.Size = new System.Drawing.Size(195, 27);
             this.BtnBinADec.TabIndex = 7;
             this.BtnBinADec.Text = "Convertir a DEC";
             this.BtnBinADec.UseVisualStyleBackColor = true;
@@ -131,9 +131,9 @@ namespace MiCalculadora
             // 
             // FormCalculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 286);
+            this.ClientSize = new System.Drawing.Size(485, 248);
             this.Controls.Add(this.BtnBinADec);
             this.Controls.Add(this.BtnDecABin);
             this.Controls.Add(this.BtnCerrar);

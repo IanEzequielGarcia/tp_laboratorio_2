@@ -1,0 +1,9 @@
+﻿Deposito-------------------
+CantidadMaxima: 5
+En el Almacen:
+Computadora----------
+CPU: costeProduccion:500 Gama:Baja Tipo:Comun  MarcaProcesador:Intel Gen:Gen7 Modelo:i3-7100 Cores:4 Hercios:0,6541059 
+GPU: costeProduccion:1000 Gama:Baja Tipo:Comun  MarcaGrafica:NVIDIA Modelo:GT-1030 Cores:4 Hercios:0,6541059 
+Precio total de componentes: 1500
+
+
